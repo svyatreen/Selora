@@ -9,7 +9,7 @@ const app: Express = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:8080",
-  "https://selora-frontend-yvzh.vercel.app",
+  "https://selora-booking.vercel.app",
 ];
 
 app.use(
@@ -29,27 +29,27 @@ app.use(
         };
       },
     },
-  }),
+  })
 );
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
+const corsOptions: cors.CorsOptions = {
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true);
 
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
 
-      return callback(new Error(`CORS blocked for origin: ${origin}`));
-    },
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization", "x-selora-lang"],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  }),
-);
+    return callback(null, false);
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "x-selora-lang"],
+};
 
-app.options("*", cors());
+app.use(cors(corsOptions));
+
+app.options("*", cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
