@@ -41,7 +41,7 @@ function getToken() {
 
 async function apiFetch<T>(path: string, options: RequestInit = {}): Promise<T> {
   const token = getToken();
-  const res = await fetch(path, {
+  return customFetch<T>(path, {
     ...options,
     headers: {
       "Content-Type": "application/json",
@@ -49,15 +49,6 @@ async function apiFetch<T>(path: string, options: RequestInit = {}): Promise<T> 
       ...(options.headers as Record<string, string> | undefined),
     },
   });
-  const text = await res.text();
-  let data: any;
-  try {
-    data = JSON.parse(text);
-  } catch {
-    throw new Error(`Server error (${res.status})`);
-  }
-  if (!res.ok) throw new Error(data?.error || `Error ${res.status}`);
-  return data as T;
 }
 
 interface PaymentIntentResult {
@@ -77,7 +68,6 @@ const CARD_ELEMENT_STYLE_LIGHT = {
     invalid: { color: "#ef4444", iconColor: "#ef4444" },
   },
   hidePostalCode: true,
-  disableLink: true,
 };
 
 const CARD_ELEMENT_STYLE_DARK = {
@@ -93,7 +83,6 @@ const CARD_ELEMENT_STYLE_DARK = {
     invalid: { color: "#f87171", iconColor: "#f87171" },
   },
   hidePostalCode: true,
-  disableLink: true,
 };
 
 function StripePaymentForm({
@@ -609,7 +598,7 @@ export default function BookingDetail() {
                   <CardDescription>{t("booking.paymentSubtitle")}</CardDescription>
                 </CardHeader>
                 <CardContent className="pt-6">
-                  <Elements stripe={stripePromise} options={{ locale: (i18n.language === 'ru' ? 'ru' : 'en') as any, disableLink: true }}>
+                  <Elements stripe={stripePromise} options={{ locale: (i18n.language === 'ru' ? 'ru' : 'en') as any }}>
                     <StripePaymentForm
                       bookingId={bookingId}
                       grandTotal={grandTotal}

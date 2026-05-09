@@ -1,5 +1,6 @@
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
+import { customFetch } from '@/api/custom-fetch';
 import {
   Calendar,
   Clock,
@@ -354,12 +355,11 @@ export default function Blog() {
                   if (!newsletterEmail) return;
                   setSubscribing(true);
                   try {
-                    const res = await fetch('/api/newsletter/subscribe', {
+                    await customFetch('/api/newsletter/subscribe', {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
                       body: JSON.stringify({ email: newsletterEmail }),
                     });
-                    if (!res.ok) throw new Error('Server error');
                     localStorage.setItem('newsletter_subscribed', 'true');
                     setSubscribed(true);
                     toast.success(t('static.blog.subscribeSuccess'));

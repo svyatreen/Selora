@@ -1,10 +1,13 @@
 import app from "./app";
 import { logger } from "./lib/logger";
+import { config, validateConfig } from "./lib/config";
 import { db, bookingsTable, usersTable, roomsTable, hotelsTable } from "./db";
 import { eq, and, lt } from "drizzle-orm";
 import { sendMail, emailBookingCancelled } from "./lib/mailer";
 
-const port = Number(process.env.PORT);
+validateConfig();
+
+const port = config.port;
 
 if (!port) {
   throw new Error("PORT is required");

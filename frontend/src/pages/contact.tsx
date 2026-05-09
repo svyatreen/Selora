@@ -1,6 +1,7 @@
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { customFetch } from '@/api/custom-fetch';
 import { useState } from 'react';
 import { Link } from 'wouter';
 import {
@@ -60,12 +61,11 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setLoading(true);
     try {
-      const res = await fetch('/api/contact', {
+      await customFetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
-      if (!res.ok) throw new Error('Server error');
       setSubmitted(true);
     } catch {
       alert('Ошибка при отправке. Попробуйте ещё раз.');

@@ -1,12 +1,13 @@
 import Stripe from 'stripe';
 import { logger } from './logger';
+import { config } from './config';
 
-if (!process.env.STRIPE_SECRET_KEY) {
+if (!config.stripe.secretKey) {
   logger.warn('STRIPE_SECRET_KEY not set — Stripe payments disabled');
 }
 
-export const stripe = process.env.STRIPE_SECRET_KEY
-  ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+export const stripe = config.stripe.secretKey
+  ? new Stripe(config.stripe.secretKey, {
       apiVersion: '2025-04-30.basil',
     })
   : null;
