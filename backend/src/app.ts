@@ -49,8 +49,6 @@ const corsOptions: cors.CorsOptions = {
 
 app.use(cors(corsOptions));
 
-app.options("*", cors(corsOptions));
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -62,6 +60,10 @@ app.get("/healthz", (_req, res) => {
 
 app.get("/", (_req, res) => {
   res.json({ status: "ok" });
+});
+
+app.use((req, res) => {
+  res.status(404).json({ error: "Not found" });
 });
 
 export default app;
