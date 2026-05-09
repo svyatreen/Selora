@@ -3,9 +3,16 @@ import { logger } from "./lib/logger";
 import { config, validateConfig } from "./lib/config";
 import { db, bookingsTable, usersTable, roomsTable, hotelsTable } from "./db";
 import { eq, and, lt } from "drizzle-orm";
-import { sendMail, emailBookingCancelled } from "./lib/mailer";
+import { sendMail, emailBookingCancelled, checkMailerConfig } from "./lib/mailer";
 
 validateConfig();
+
+const mailerStatus = checkMailerConfig();
+if (mailerStatus.configured) {
+  logger.info(mailerStatus.message);
+} else {
+  logger.warn(mailerStatus.message);
+}
 
 const port = config.port;
 
@@ -54,9 +61,21 @@ async function expirePendingBookings() {
         if (user && room && hotel) {
           sendMail({
             to: user.email,
-            subject: "Booking cancelled",
-            text: `Booking ${booking.id} cancelled`,
-          }).catch(() => {});
+            ...emailBookingCancelled({
+              name: user.name,
+              bookingId: booking.id,
+              hotelName: hotel.name,
+              roomName: room.type,
+              checkIn: new Date(booking.checkIn).toLocaleDateString('ru-RU'),
+              checkOut: new Date(booking.checkOut).toLocaleDateString('ru-RU'),
+              nights: Math.ceil((new Date(booking.checkOut).getTime() - new Date(booking.checkIn).getTime()) / (1000 * 60 * 60 * 24)),
+              totalPrice: booking.totalPrice,
+              currency: booking.currency,
+              exchangeRate: booking.exchangeRate,
+            }),
+          }).catch((err) => {
+            logger.error({ err, bookingId: booking.id, email: user.email }, "Failed to send booking expiry email");
+          });
         }
       }
     }

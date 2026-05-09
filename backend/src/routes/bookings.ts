@@ -25,6 +25,7 @@ import {
   emailBookingCancelled,
 } from '../lib/mailer';
 import { stripe } from '../lib/stripe';
+import { logger } from '../lib/logger';
 
 const ROOM_TYPE_LABELS: Record<string, string> = {
   single: 'Одноместный номер',
@@ -453,7 +454,9 @@ router.post(
           currency: booking.currency,
           exchangeRate: booking.exchangeRate,
         }),
-      }).catch(() => {});
+      }).catch((err) => {
+        logger.error({ err, bookingId: booking.id, email: confirmUser.email }, "Failed to send booking confirmed email");
+      });
     }
     res.json(await bookingWithDetails(updated, lang));
   },
@@ -522,7 +525,9 @@ router.post(
           currency: booking.currency,
           exchangeRate: booking.exchangeRate,
         }),
-      }).catch(() => {});
+      }).catch((err) => {
+        logger.error({ err, bookingId: booking.id, email: cancelUser.email }, "Failed to send booking cancelled email");
+      });
     }
 
     res.json(updated);
@@ -648,7 +653,9 @@ router.post(
           currency: booking.currency,
           exchangeRate: booking.exchangeRate,
         }),
-      }).catch(() => {});
+      }).catch((err) => {
+        logger.error({ err, bookingId: booking.id, email: payUser.email }, "Failed to send booking paid email");
+      });
     }
 
     res.json(updated);

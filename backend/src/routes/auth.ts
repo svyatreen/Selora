@@ -4,6 +4,7 @@ import { eq } from "drizzle-orm";
 import { RegisterBody, LoginBody } from "../zod";
 import { hashPassword, comparePassword, signToken } from "../lib/auth";
 import { sendMail, emailWelcome, emailLogin } from "../lib/mailer";
+import { logger } from "../lib/logger";
 
 const router: IRouter = Router();
 
@@ -30,7 +31,9 @@ router.post("/auth/register", async (req, res): Promise<void> => {
 
   const token = signToken({ userId: user.id, email: user.email, role: user.role });
 
-  sendMail({ to: user.email, ...emailWelcome(user.name) }).catch(() => {});
+  sendMail({ to: user.email, ...emailWelcome(user.name) }).catch((err) => {
+    logger.error({ err, email: user.email }, "Failed to send welcome email");
+  });
 
   res.status(201).json({
     token,
@@ -71,7 +74,9 @@ router.post("/auth/login", async (req, res): Promise<void> => {
   const token = signToken({ userId: user.id, email: user.email, role: user.role });
 
   const loginTime = new Date().toLocaleString("ru-RU", { timeZone: "Europe/Moscow" }) + " (МСК)";
-  sendMail({ to: user.email, ...emailLogin(user.name, loginTime) }).catch(() => {});
+  sendMail({ to: user.email, ...emailLogin(user.name, loginTime) }).catch((err) => {
+    logger.error({ err, email: user.email }, "Failed to send login email");
+  });
 
   res.json({
     token,

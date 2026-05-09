@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import * as nodemailer from "nodemailer";
 import { logger } from "./logger";
 
 const GMAIL_USER = "selorabooking@gmail.com";
@@ -73,20 +73,39 @@ export async function sendMail(opts: {
   html: string;
 }): Promise<void> {
   if (!GMAIL_APP_PASSWORD) {
-    logger.warn("GMAIL_APP_PASSWORD not set — email not sent");
+    logger.warn({ to: opts.to }, "GMAIL_APP_PASSWORD not set — email not sent");
     return;
   }
   try {
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: `"Selora Hotels" <${GMAIL_USER}>`,
       to: opts.to,
       subject: opts.subject,
       html: opts.html,
     });
-    logger.info({ to: opts.to, subject: opts.subject }, "Email sent");
+    logger.info({ 
+      to: opts.to, 
+      subject: opts.subject,
+      messageId: info.messageId,
+      response: info.response 
+    }, "Email sent successfully");
   } catch (err) {
-    logger.error({ err, to: opts.to }, "Failed to send email");
+    logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email");
+    throw err; // Re-throw to allow caller to handle
   }
+}
+
+export function checkMailerConfig(): { configured: boolean; message: string } {
+  if (!GMAIL_APP_PASSWORD) {
+    return {
+      configured: false,
+      message: "GMAIL_APP_PASSWORD environment variable is not set. Email notifications will NOT work."
+    };
+  }
+  return {
+    configured: true,
+    message: "Gmail mailer is configured and ready."
+  };
 }
 
 function baseTemplate(title: string, body: string): string {

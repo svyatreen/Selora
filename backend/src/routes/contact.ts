@@ -1,6 +1,7 @@
 import { Router, type IRouter } from "express";
 import { z } from "zod";
 import { sendMail, emailContactReceived } from "../lib/mailer";
+import { logger } from "../lib/logger";
 
 const ADMIN_EMAIL = "selorabooking@gmail.com";
 
@@ -27,9 +28,11 @@ router.post("/contact", async (req, res): Promise<void> => {
 
   const { name, email, topic, bookingRef, message } = parsed.data;
 
-  await sendMail({
+  sendMail({
     to: ADMIN_EMAIL,
     ...emailContactReceived({ adminEmail: ADMIN_EMAIL, fromName: name, fromEmail: email, topic, bookingRef, message }),
+  }).catch((err) => {
+    logger.error({ err, from: email }, "Failed to send contact email");
   });
 
   res.json({ ok: true });
@@ -46,7 +49,9 @@ router.post("/newsletter/subscribe", async (req, res): Promise<void> => {
 
   const { emailNewsletterSubscribed } = await import("../lib/mailer");
 
-  await sendMail({ to: email, ...emailNewsletterSubscribed(email) });
+  sendMail({ to: email, ...emailNewsletterSubscribed(email) }).catch((err) => {
+    logger.error({ err, email }, "Failed to send newsletter subscription email");
+  });
 
   res.json({ ok: true });
 });
