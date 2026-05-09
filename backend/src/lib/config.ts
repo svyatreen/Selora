@@ -35,8 +35,8 @@ export const config = {
     secretKey: process.env.STRIPE_SECRET_KEY || '',
   },
   
-  gmail: {
-    appPassword: process.env.GMAIL_APP_PASSWORD || '',
+  resend: {
+    apiKey: process.env.RESEND_API_KEY || '',
   },
   
   session: {

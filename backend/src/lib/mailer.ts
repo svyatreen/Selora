@@ -1,7 +1,10 @@
-import * as nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { logger } from "./logger";
 
-const GMAIL_USER = "selorabooking@gmail.com";
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
+const FROM_EMAIL = "Selora Hotels <onboarding@resend.dev>";
+
+const resend = new Resend(RESEND_API_KEY);
 
 const CURRENCY_SYMBOLS: Record<string, { symbol: string; position: "before" | "after"; decimals: number }> = {
   USD: { symbol: "$", position: "before", decimals: 2 },
@@ -57,54 +60,48 @@ function formatCurrency(usdAmount: number, currencyCode: string, exchangeRate?: 
 function formatBookingRef(id: number): string {
   return `SL-${new Date().getFullYear()}-${String(id).padStart(5, "0")}`;
 }
-const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
-
-export const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: GMAIL_USER,
-    pass: GMAIL_APP_PASSWORD,
-  },
-});
 
 export async function sendMail(opts: {
   to: string;
   subject: string;
   html: string;
 }): Promise<void> {
-  if (!GMAIL_APP_PASSWORD) {
-    logger.warn({ to: opts.to }, "GMAIL_APP_PASSWORD not set — email not sent");
+  if (!RESEND_API_KEY) {
+    logger.warn({ to: opts.to }, "RESEND_API_KEY not set — email not sent");
     return;
   }
   try {
-    const info = await transporter.sendMail({
-      from: `"Selora Hotels" <${GMAIL_USER}>`,
+    const { data, error } = await resend.emails.send({
+      from: FROM_EMAIL,
       to: opts.to,
       subject: opts.subject,
       html: opts.html,
     });
+    if (error) {
+      logger.error({ error, to: opts.to, subject: opts.subject }, "Failed to send email");
+      throw error;
+    }
     logger.info({ 
       to: opts.to, 
       subject: opts.subject,
-      messageId: info.messageId,
-      response: info.response 
+      id: data?.id 
     }, "Email sent successfully");
   } catch (err) {
     logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email");
-    throw err; // Re-throw to allow caller to handle
+    throw err;
   }
 }
 
 export function checkMailerConfig(): { configured: boolean; message: string } {
-  if (!GMAIL_APP_PASSWORD) {
+  if (!RESEND_API_KEY) {
     return {
       configured: false,
-      message: "GMAIL_APP_PASSWORD environment variable is not set. Email notifications will NOT work."
+      message: "RESEND_API_KEY environment variable is not set. Email notifications will NOT work."
     };
   }
   return {
     configured: true,
-    message: "Gmail mailer is configured and ready."
+    message: "Resend mailer is configured and ready."
   };
 }
 
