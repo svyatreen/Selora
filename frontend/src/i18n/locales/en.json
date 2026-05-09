@@ -1,0 +1,3213 @@
+{
+  "common": {
+    "search": "Search",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "comingSoon": "Coming soon",
+    "perNight": "/ night",
+    "night_one": "{{count}} night",
+    "night_other": "{{count}} nights",
+    "review_one": "{{count}} review",
+    "review_other": "{{count}} reviews",
+    "guest_one": "{{count}} guest",
+    "guest_other": "{{count}} guests",
+    "starHotel": "{{count}}-star Hotel",
+    "star_one": "{{count}} star",
+    "star_other": "{{count}} stars",
+    "upTo": "Up to",
+    "from": "from",
+    "startingFrom": "Starting from",
+    "perNightFrom": "Per night from",
+    "viewDetails": "View Details",
+    "viewAll": "View all"
+  },
+  "nav": {
+    "findHotel": "Find a Hotel",
+    "favorites": "Favorites",
+    "compare": "Compare",
+    "adminDashboard": "Admin Dashboard",
+    "login": "Log in",
+    "signup": "Sign up",
+    "profile": "Profile & Bookings",
+    "logout": "Log out",
+    "toggleMenu": "Toggle menu",
+    "toggleTheme": "Toggle theme",
+    "changeLanguage": "Change language",
+    "changeCurrency": "Change currency"
+  },
+  "languageDialog": {
+    "title": "Choose your language",
+    "description": "All site content will be translated into your selected language.",
+    "searchPlaceholder": "Search by name or code…",
+    "noResults": "No languages match \"{{query}}\""
+  },
+  "currencyDialog": {
+    "title": "Choose your currency",
+    "description": "Prices across the site will be shown and converted to your selected currency in real time.",
+    "loadingRates": " Loading latest rates…",
+    "searchPlaceholder": "Search by name, code or symbol…",
+    "noResults": "No currencies match \"{{query}}\""
+  },
+  "footer": {
+    "destinations": "Destinations",
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "aboutUs": "About Us",
+    "press": "Press",
+    "blog": "Blog",
+    "careers": "Careers",
+    "helpCenter": "Help Center",
+    "contactUs": "Contact Us",
+    "cancellationPolicy": "Cancellation Policy",
+    "safety": "Safety",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "accessibility": "Accessibility",
+    "copyright": "© {{year}} Selora. All rights reserved."
+  },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "body": "We use cookies to improve your experience, analyze traffic and personalize content. By clicking \"Accept all\", you consent to the use of all cookies.",
+    "policyLink": "Cookie Policy",
+    "acceptAll": "Accept all",
+    "essentialOnly": "Essential only",
+    "close": "Close"
+  },
+  "dateRange": {
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "selectDate": "Select date",
+    "nights": "Nights",
+    "total": "Total",
+    "pickDates": "Pick your dates",
+    "clear": "Clear",
+    "close": "Close",
+    "stay_one": "{{count}} night stay",
+    "stay_other": "{{count}} nights stay"
+  },
+  "favoritesPage": {
+    "headerTitle": "Your Saved Hotels",
+    "headerSubtitle": "Keep track of the places you'd love to stay.",
+    "empty": "No favorites yet",
+    "emptyHelp": "Start exploring our collection of premium hotels and save your favorites for later.",
+    "explore": "Explore Hotels",
+    "added": "Added to favorites",
+    "removed": "Removed from favorites"
+  },
+  "loginPage": {
+    "heading": "Sign in to your account",
+    "or": "Or",
+    "createAccount": "create a new account",
+    "emailLabel": "Email address",
+    "passwordLabel": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "welcomeBack": "Welcome back!",
+    "failed": "Failed to login. Please try again."
+  },
+  "registerPage": {
+    "heading": "Create an account",
+    "or": "Or",
+    "signInExisting": "sign in to your existing account",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email address",
+    "passwordLabel": "Password",
+    "namePlaceholder": "John Doe",
+    "submit": "Sign up",
+    "submitting": "Creating account...",
+    "success": "Account created successfully!",
+    "failed": "Failed to create account. Please try again."
+  },
+  "notFoundPage": {
+    "title": "404 Page Not Found",
+    "body": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home"
+  },
+  "currency": {
+    "ariaChange": "Change currency",
+    "title": "Choose your currency",
+    "description": "Prices across the site will be shown and converted to your selected currency in real time.",
+    "loading": " Loading latest rates…",
+    "searchPlaceholder": "Search by name, code or symbol…",
+    "noResults": "No currencies match \"{{query}}\""
+  },
+  "language": {
+    "ariaChange": "Change language",
+    "title": "Choose your language",
+    "description": "The interface will be displayed in your selected language."
+  },
+  "hotelCard": {
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "luxury": "Luxury"
+  },
+  "home": {
+    "heroTitle": "Find Your Next Perfect Stay",
+    "heroSubtitle": "Experience exceptional comfort and service at our handpicked selection of premium hotels worldwide.",
+    "searchPlaceholder": "Where are you going?",
+    "stats": {
+      "premiumHotels": "Premium Hotels",
+      "cities": "Cities",
+      "happyGuests": "Happy Guests",
+      "averageRating": "Average Rating"
+    },
+    "recentlyViewed": "Recently Viewed",
+    "recentlyViewedSubtitle": "Pick up where you left off",
+    "browseAll": "Browse all hotels",
+    "popularDestinations": "Popular Destinations",
+    "popularSubtitle": "Explore hotels in our most sought-after cities",
+    "viewAllCities": "View all cities",
+    "topRated": "Top Rated Properties",
+    "topRatedSubtitle": "Discover our guests' favorite accommodations",
+    "viewAllHotels": "View all hotels",
+    "properties_one": "{{count}} property",
+    "properties_other": "{{count}} properties"
+  },
+  "hotels": {
+    "pageTitle": "Discover Extraordinary Stays",
+    "searchPlaceholder": "Search by city, hotel name, or landmark...",
+    "filters": "Filters",
+    "clearAll": "Clear all",
+    "sortBy": "Sort by:",
+    "sort": {
+      "popular": "Most Popular",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "ratingDesc": "Highest Rated"
+    },
+    "showing": "Showing {{count}} of {{total}} properties",
+    "searching": "Searching...",
+    "noResults": "No properties found",
+    "noResultsHelp": "Try adjusting your filters or search terms.",
+    "noMatchTitle": "No hotels match your filters",
+    "noMatchHelp": "Try removing some filters or expanding your price and review ranges.",
+    "clearAllFilters": "Clear all filters",
+    "stars_one": "{{count}} star",
+    "stars_other": "{{count}} stars",
+    "withinKm": "<{{km}}km from center",
+    "filter": {
+      "price": "Price per night",
+      "popular": "Popular facilities",
+      "stars": "Hotel class",
+      "type": "Property type",
+      "city": "City / Destination",
+      "distance": "Distance from center",
+      "meals": "Meals",
+      "rooms": "Room features",
+      "access": "Accessibility",
+      "amenities": "All amenities"
+    },
+    "facility": {
+      "WiFi": "WiFi",
+      "Parking": "Parking",
+      "Swimming pool": "Swimming pool",
+      "Spa & wellness": "Spa & wellness",
+      "Fitness center": "Fitness center",
+      "Airport shuttle": "Airport shuttle",
+      "Pet friendly": "Pet friendly",
+      "Family friendly": "Family friendly",
+      "Sea view": "Sea view",
+      "Balcony": "Balcony",
+      "Air conditioning": "Air conditioning",
+      "Non-smoking": "Non-smoking",
+      "Wheelchair accessible": "Wheelchair accessible",
+      "Elevator": "Elevator",
+      "Breakfast included": "Breakfast included",
+      "Half board": "Half board",
+      "Full board": "Full board",
+      "All-inclusive": "All-inclusive",
+      "Room service": "Room service",
+      "Restaurant on-site": "Restaurant on-site",
+      "Bar / Lounge": "Bar / Lounge",
+      "Vegetarian options": "Vegetarian options",
+      "Special diet menus": "Special diet menus",
+      "Kids' meals": "Kids' meals"
+    },
+    "propertyType": {
+      "Hotel": "Hotel",
+      "Resort": "Resort",
+      "Villa": "Villa",
+      "Apartment": "Apartment",
+      "Boutique": "Boutique",
+      "Hostel": "Hostel",
+      "B&B": "B&B",
+      "Guest House": "Guest House"
+    },
+    "distance": {
+      "lt1": "Less than 1 km",
+      "lt3": "Less than 3 km",
+      "lt5": "Less than 5 km",
+      "lt10": "Less than 10 km"
+    }
+  },
+  "hotel": {
+    "starHotel_one": "{{count}} Star Hotel",
+    "starHotel_other": "{{count}} Star Hotel",
+    "reviewsCount_one": "{{count}} review",
+    "reviewsCount_other": "{{count}} reviews",
+    "startingFrom": "Starting from",
+    "perNight": "/night",
+    "viewDetails": "View Details",
+    "guestsUpTo": "Up to {{count}} guests",
+    "roomsLeft_one": "{{count}} room left",
+    "roomsLeft_other": "{{count}} rooms left",
+    "perNightSmall": "{{price}}/night",
+    "aboutProperty": "About this property",
+    "popularAmenities": "Popular Amenities",
+    "guestReviews": "Guest Reviews",
+    "noReviews": "No reviews yet. Be the first to leave a review!",
+    "leaveReview": "Leave a review",
+    "reviewPlaceholder": "Tell us about your experience...",
+    "submitReview": "Submit Review",
+    "submitting": "Submitting...",
+    "selectDates": "Select Dates",
+    "availableRooms": "Available Rooms",
+    "pricesShownFor_one": "Prices shown for {{count}} night",
+    "pricesShownFor_other": "Prices shown for {{count}} nights",
+    "noRooms": "No rooms available for selected dates.",
+    "roomTypeName": "{{type}} Room",
+    "bookNow": "Book Now",
+    "unavailable": "Unavailable",
+    "youMightAlsoLike": "You might also like",
+    "loginToBook": "Please log in to book a room",
+    "selectDatesError": "Please select check-in and check-out dates",
+    "bookFailed": "Failed to initiate booking",
+    "reviewSuccess": "Review submitted successfully",
+    "reviewFailed": "Failed to submit review",
+    "allAmenities": "All amenities",
+    "showAll": "Show all",
+    "showLess": "Show less",
+    "keyDistances": "Important places nearby",
+    "minWalk": "min walk",
+    "minDrive": "min drive",
+    "priceIncludes": "What's in the price",
+    "includedInPrice": "Included",
+    "notIncluded": "Not included",
+    "infoBlock": {
+      "title": "Hotel information",
+      "languages": "Languages spoken",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "earlyCheckIn": "Early check-in",
+      "lateCheckOut": "Late check-out",
+      "available": "Available",
+      "fee": "Fee",
+      "parking": "Parking",
+      "parkingFree": "Free",
+      "parkingPaid": "Paid",
+      "parkingCovered": "Covered",
+      "parkingValet": "Valet",
+      "accessibility": "Accessibility",
+      "pets": "Pets",
+      "petsAllowed": "Allowed",
+      "petsNotAllowed": "Not allowed",
+      "upToKg": "Up to",
+      "children": "Children",
+      "childrenAllAges": "All ages welcome",
+      "childrenNotAllowed": "Not allowed",
+      "free": "Free",
+      "reduced": "Reduced",
+      "full": "Full price",
+      "payment": "Payment methods",
+      "yearsOld": "yrs",
+      "access": {
+        "wheelchair": "Wheelchair accessible",
+        "elevator": "Elevator",
+        "ramped": "Ramped entrance",
+        "rooms": "Accessible rooms",
+        "braille": "Braille signage",
+        "hearing": "Hearing assistance"
+      }
+    },
+    "nearby": {
+      "title": "What's around the hotel",
+      "subtitle": "Nearby places from OpenStreetMap",
+      "empty": "Nothing found nearby in this category.",
+      "walkMin": "min",
+      "fromHotel": "from hotel",
+      "errorLoading": "Could not load nearby places.",
+      "loading": "Loading nearby places…",
+      "cat": {
+        "restaurant": "Restaurants",
+        "cafe": "Cafés",
+        "bar": "Bars",
+        "shopping": "Shopping",
+        "attraction": "Attractions",
+        "park": "Parks",
+        "pharmacy": "Pharmacies",
+        "atm": "ATMs"
+      }
+    }
+  },
+  "room": {
+    "back": "Back to {{hotel}}",
+    "bedType": "Bed Type",
+    "roomSize": "Room Size",
+    "maxGuests": "Max Guests",
+    "bathroom": "Bathroom",
+    "private": "Private",
+    "aboutRoom": "About this room",
+    "whatsIncluded": "What's included",
+    "inRoomAmenities": "In-Room Amenities",
+    "policies": "Policies",
+    "checkInOut": "Check-in / Check-out",
+    "checkInTime": "Check-in: from 3:00 PM",
+    "checkOutTime": "Check-out: by 11:00 AM",
+    "cancellationPolicy": "Cancellation Policy",
+    "cancellationText": "Free cancellation up to 48 hours before check-in. Late cancellations are charged one night.",
+    "available": "Available",
+    "notAvailable": "Not available for selected dates",
+    "selectDates": "Select Dates",
+    "taxesFees": "Taxes & Fees (10%)",
+    "total": "Total",
+    "processing": "Processing…",
+    "selectToBook": "Select dates to book",
+    "reserve": "Reserve — {{price}}",
+    "notAvailableShort": "Not Available",
+    "noChargeYet": "You won't be charged yet · Free cancellation available",
+    "securePayment": "Secure payment",
+    "bestPriceGuarantee": "Best price guarantee",
+    "otherRooms": "Other rooms at {{hotel}}",
+    "amenity": {
+      "wifi": "Free Wi-Fi",
+      "tv": "Smart TV",
+      "ac": "Air Conditioning",
+      "coffee": "Coffee Maker",
+      "bath": "Luxury Bathroom",
+      "safe": "Electronic Safe",
+      "service": "24h Room Service",
+      "checkout": "Express Checkout"
+    },
+    "type": {
+      "single": "Single Room",
+      "double": "Double Room",
+      "deluxe": "Deluxe Room",
+      "suite": "Suite"
+    },
+    "perNightFrom": "Per night from",
+    "perNightSlash": "/ night",
+    "perNight": "night",
+    "perNights_one": "{{price}} × {{count}} night",
+    "perNights_other": "{{price}} × {{count}} nights",
+    "upToGuests": "Up to {{count}} guests",
+    "upToGuestsShort": "Up to {{count}}",
+    "aboutFloorAndBath": "{{bathroom}}. Located on the {{floor}}.",
+    "perfectFor": "Perfect for guests seeking {{purpose}} during their stay at {{hotel}}.",
+    "purpose": {
+      "single": "comfortable and well-appointed accommodation",
+      "double": "comfortable and well-appointed accommodation",
+      "deluxe": "elevated comfort and style",
+      "suite": "the ultimate luxury experience"
+    },
+    "info": {
+      "single": {
+        "size": "22–28 m²",
+        "beds": "1 Single Bed",
+        "bathroom": "Private bathroom with shower",
+        "floor": "Standard floor",
+        "features": [
+          "Work desk & ergonomic chair",
+          "High-speed Wi-Fi",
+          "Flat-screen TV with streaming",
+          "Mini-fridge",
+          "Electronic safe",
+          "Premium toiletries",
+          "Daily housekeeping",
+          "Tea & coffee facilities"
+        ]
+      },
+      "double": {
+        "size": "32–40 m²",
+        "beds": "1 King or 2 Twin Beds",
+        "bathroom": "Ensuite bathroom with bath & shower",
+        "floor": "Standard or upper floor",
+        "features": [
+          "Sitting area with sofa",
+          "High-speed Wi-Fi",
+          "55\" flat-screen TV",
+          "Mini-bar",
+          "Electronic safe",
+          "Pillow menu",
+          "Bathrobes & slippers",
+          "Tea & coffee facilities",
+          "Daily housekeeping"
+        ]
+      },
+      "deluxe": {
+        "size": "45–55 m²",
+        "beds": "1 King Bed",
+        "bathroom": "Luxury marble bathroom with rain shower & bathtub",
+        "floor": "Upper floor with city/garden views",
+        "features": [
+          "Separate sitting lounge",
+          "Ultra-fast Wi-Fi",
+          "65\" OLED flat-screen TV",
+          "Premium mini-bar",
+          "Nespresso machine",
+          "Electronic safe",
+          "Plush bathrobes & slippers",
+          "Luxury pillow menu",
+          "Evening turndown service",
+          "Daily housekeeping",
+          "Welcome fruit basket"
+        ]
+      },
+      "suite": {
+        "size": "80–150 m²",
+        "beds": "1 King Bed + Sofa Bed",
+        "bathroom": "Dual marble bathrooms with jacuzzi",
+        "floor": "Top floor or exclusive suite wing",
+        "features": [
+          "Separate bedroom & living room",
+          "Private dining area",
+          "Dedicated butler service",
+          "Ultra-fast Wi-Fi throughout",
+          "Multiple 65\" OLED TVs",
+          "Full-size premium bar",
+          "Nespresso & premium teas",
+          "Jacuzzi & rain shower",
+          "Plush bathrobes & designer slippers",
+          "Signature turndown service",
+          "Complimentary breakfast & evening cocktails",
+          "Airport transfers included"
+        ]
+      }
+    },
+    "loginToBook": "Please log in to book a room",
+    "selectDatesError": "Please select check-in and check-out dates",
+    "bookingFailed": "Failed to create booking",
+    "hotelsBreadcrumb": "Hotels",
+    "detailedSpecs": "Room specifications",
+    "freeItems": "Complimentary in room",
+    "allRoomAmenities": "All in-room amenities",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "specs": {
+      "size": "Size",
+      "floor": "Floor",
+      "view": "View",
+      "bed": "Bed",
+      "bath": "Bathroom",
+      "soundproofed": "Soundproofed",
+      "nonSmoking": "Non-smoking"
+    },
+    "ratePlans": {
+      "title": "Rate plan",
+      "recommended": "Best value",
+      "refundable": "Refundable",
+      "nonRefundable": "Non-refundable",
+      "freeCancellation": "Free cancellation up to",
+      "hours": "h",
+      "breakfast": "Breakfast",
+      "lateCheckout": "Late checkout",
+      "save": "Save",
+      "selected": "Selected"
+    },
+    "addons": {
+      "title": "Add-on services",
+      "subtitle": "Make your stay even more comfortable",
+      "lineLabel": "Add-ons"
+    }
+  },
+  "booking": {
+    "reference": "Booking {{ref}}",
+    "createdOn": "Created on {{date}}",
+    "status": {
+      "pending": "AWAITING PAYMENT",
+      "confirmed": "PAID",
+      "verified": "CONFIRMED",
+      "cancelled": "CANCELLED"
+    },
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "after3pm": "After 3:00 PM",
+    "before11am": "Before 11:00 AM",
+    "roomType": "Room Type",
+    "duration": "Duration",
+    "nights_one": "{{count}} Night",
+    "nights_other": "{{count}} Nights",
+    "cancellationPolicy": "Cancellation Policy",
+    "cancellationFull": "Free cancellation up to 48 hours before check-in. Cancellations made within 48 hours of check-in will be subject to a one-night fee. If you fail to check in, you will be charged the full amount of your reservation.",
+    "alreadyPaid": "This booking has already been paid. Cancellation may result in a partial or full refund depending on the timing.",
+    "cancelReservation": "Cancel Reservation",
+    "cancelling": "Cancelling...",
+    "pendingCancelNote": "No payment has been made — cancellation is free and instant, with no penalties.",
+    "autoExpireNote": "Unpaid reservations are automatically cancelled after 30 minutes.",
+    "priceSummary": "Price Summary",
+    "taxesFees": "Taxes & Fees (10%)",
+    "total": "Total",
+    "paymentDetails": "Payment Details",
+    "paymentSubtitle": "Complete your booking securely",
+    "choosePayment": "Choose payment method",
+    "default": "Default",
+    "useNewCard": "Use new card",
+    "saveCard": "Save this card for future bookings",
+    "stripeSecure": "Secured by Stripe. Your card details are never stored on our servers.",
+    "processing": "Processing...",
+    "pay": "Pay {{amount}}",
+    "fillCardDetails": "Please fill in all card details",
+    "paymentSuccess": "Payment received! Awaiting admin confirmation.",
+    "paymentFailed": "Payment failed. Please try again.",
+    "cancelSuccess": "Booking cancelled successfully.",
+    "cancelFailed": "Failed to cancel booking.",
+    "completed": "Payment Received",
+    "completedBody": "Your booking is awaiting admin confirmation. We'll send you an email once it's confirmed.",
+    "verifiedTitle": "Booking Confirmed! 🎉",
+    "verifiedBody": "Your booking has been confirmed by the administrator. We look forward to welcoming you!",
+    "viewAllBookings": "View All Bookings",
+    "cancelDialog": {
+      "title": "Cancel this reservation?",
+      "body": "This action cannot be undone. Your booking will be cancelled and the room will be released.",
+      "refundNote": " Refund eligibility depends on our cancellation policy.",
+      "keep": "Keep reservation",
+      "confirm": "Yes, cancel booking"
+    }
+  },
+  "login": {
+    "title": "Welcome Back",
+    "subtitle": "Sign in to continue your journey with Selora",
+    "email": "Email",
+    "password": "Password",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "Enter your password",
+    "submit": "Sign In",
+    "submitting": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign up",
+    "success": "Welcome back!",
+    "failed": "Invalid email or password"
+  },
+  "register": {
+    "title": "Create Account",
+    "subtitle": "Join Selora and discover exceptional stays",
+    "name": "Full Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Create a strong password",
+    "confirmPassword": "Confirm Password",
+    "confirmPlaceholder": "Re-enter your password",
+    "submit": "Create Account",
+    "submitting": "Creating account...",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Sign in",
+    "passwordsDontMatch": "Passwords do not match",
+    "success": "Account created successfully!",
+    "failed": "Registration failed"
+  },
+  "favorites": {
+    "title": "My Favorites",
+    "subtitle": "Hotels you've saved for later",
+    "empty": "No favorites yet",
+    "emptyHelp": "Browse hotels and tap the heart icon to save them here.",
+    "browseHotels": "Browse Hotels",
+    "removed": "Removed from favorites",
+    "removeFailed": "Failed to remove favorite"
+  },
+  "profile": {
+    "greeting": "Hello, {{name}}",
+    "adminBadge": "Admin",
+    "stat": {
+      "bookings": "Bookings",
+      "spent": "Spent",
+      "cities": "Cities"
+    },
+    "tabs": {
+      "bookings": "My Bookings",
+      "settings": "Account Settings"
+    },
+    "bookings": {
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "bookedAgo": "Booked {{ago}}",
+      "completePayment": "Complete Payment",
+      "viewDetails": "View Details",
+      "roomTypeLine": "{{type}} Room",
+      "noneTitle": "No bookings yet",
+      "noneBody": "When you book a hotel, your itinerary and details will appear here.",
+      "findHotel": "Find a Hotel"
+    },
+    "avatar": {
+      "title": "Profile Picture",
+      "subtitle": "Upload a photo from your computer. It will be cropped to a square.",
+      "upload": "Upload Photo",
+      "uploading": "Uploading...",
+      "remove": "Remove",
+      "change": "Change avatar",
+      "updated": "Avatar updated",
+      "removed": "Avatar removed",
+      "uploadFailed": "Failed to upload avatar",
+      "removeFailed": "Failed to remove avatar",
+      "imageOnly": "Please choose an image file",
+      "tooLarge": "Image is too large (max 5MB)"
+    },
+    "personal": {
+      "title": "Personal Information",
+      "subtitle": "Update your name, contact details, and a short bio.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "bio": "About You",
+      "bioPlaceholder": "Tell us a little about yourself and your travel preferences...",
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "saved": "Profile updated successfully",
+      "saveFailed": "Failed to update profile",
+      "noChanges": "No changes to save."
+    },
+    "password": {
+      "title": "Change Password",
+      "subtitle": "After changing your password you will be signed out and must sign in again.",
+      "current": "Current Password",
+      "currentPlaceholder": "Enter current password",
+      "new": "New Password",
+      "newPlaceholder": "At least 6 characters",
+      "confirm": "Confirm New Password",
+      "confirmPlaceholder": "Repeat new password",
+      "update": "Update Password",
+      "updating": "Updating...",
+      "tooShort": "New password must be at least 6 characters",
+      "noMatch": "Passwords do not match",
+      "sameAsOld": "New password must be different from current",
+      "changed": "Password changed. Please sign in again.",
+      "failed": "Failed to change password"
+    },
+    "delete": {
+      "title": "Delete Account",
+      "subtitle": "Permanently delete your account, bookings, reviews, favorites and all associated data. This action cannot be undone.",
+      "button": "Delete My Account",
+      "dialogTitle": "Delete your account?",
+      "dialogBody": "This will permanently remove your profile, bookings, reviews and favorites. Enter your password to confirm.",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "cancel": "Cancel",
+      "confirm": "Delete Account",
+      "deleting": "Deleting...",
+      "deleted": "Your account has been deleted",
+      "needPassword": "Please enter your password to confirm",
+      "failed": "Failed to delete account"
+    },
+    "payments": {
+      "title": "Payment Methods",
+      "subtitle": "Cards you save here are kept securely on your account and can be used to pay for any future booking. Only the last 4 digits and expiry are stored — never the full number or CVV.",
+      "none": "You don't have any saved cards yet.",
+      "default": "Default",
+      "setDefault": "Set default",
+      "addNew": "Add new card",
+      "addTitle": "Add a new card",
+      "cancel": "Cancel",
+      "save": "Save Card",
+      "saving": "Saving...",
+      "added": "Card added",
+      "addFailed": "Failed to add card",
+      "removed": "Card removed",
+      "removeFailed": "Failed to remove card",
+      "defaultUpdated": "Default card updated",
+      "setDefaultFailed": "Failed to set default",
+      "fillCard": "Please fill in all card details",
+      "removeTitle": "Remove this card?",
+      "removeBody": "This will permanently remove {{brand}} •••• {{last4}} from your account. You can always add it back later.",
+      "keep": "Keep card",
+      "yesRemove": "Yes, remove card",
+      "removing": "Removing..."
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Manage hotels, view bookings, and monitor platform activity.",
+    "totalRevenue": "Total Revenue",
+    "fromConfirmed": "From confirmed bookings",
+    "activeHotels": "Active Hotels",
+    "totalBookings": "Total Bookings",
+    "registeredUsers": "Registered Users",
+    "tabs": {
+      "hotels": "Hotels",
+      "bookings": "Bookings",
+      "users": "Users"
+    },
+    "hotels": {
+      "title": "Manage Hotels",
+      "subtitle": "View and manage all properties on the platform.",
+      "addHotel": "Add Hotel",
+      "col": {
+        "hotel": "Hotel",
+        "location": "Location",
+        "rating": "Rating",
+        "minPrice": "Min Price",
+        "actions": "Actions"
+      },
+      "edit": "Edit"
+    },
+    "bookings": {
+      "title": "All Bookings",
+      "subtitle": "Monitor platform reservations and their status.",
+      "col": {
+        "id": "ID",
+        "guest": "Guest",
+        "hotel": "Hotel",
+        "dates": "Dates",
+        "value": "Value",
+        "status": "Status"
+      }
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "View all registered users on the platform.",
+      "col": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "joined": "Joined"
+      }
+    },
+    "loading": "Loading..."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home"
+  },
+  "static": {
+    "about": {
+      "heroBadge": "Award-Winning Luxury Travel",
+      "heroTitle": "Our Story",
+      "heroSubtitle": "Selora was built by travellers, for travellers — with one unwavering belief: exceptional hospitality should be within everyone's reach.",
+      "stats": [
+        {
+          "value": "220",
+          "label": "Premium Hotels"
+        },
+        {
+          "value": "11",
+          "label": "Cities"
+        },
+        {
+          "value": "50K+",
+          "label": "Happy Guests"
+        },
+        {
+          "value": "4.8",
+          "label": "Average Rating"
+        }
+      ],
+      "missionEyebrow": "Who We Are",
+      "missionTitle": "A Curated World of Extraordinary Stays",
+      "missionP1": "Founded in 2016 in Paris, Selora began as a small editorial project reviewing the world's finest independent hotels. Today we've grown into a trusted booking platform for discerning travellers across the globe.",
+      "missionP2": "Every property in our collection is personally inspected by our curation team. We reject over 80% of hotels that apply to join — because your time and money deserve only the best.",
+      "missionCta": "Explore Our Collection",
+      "quote": "\"Flawlessly curated — every stay has been unforgettable.\"",
+      "quoteAuthor": "— Sarah M., London",
+      "valuesEyebrow": "What We Stand For",
+      "valuesTitle": "Our Core Values",
+      "values": [
+        {
+          "title": "Uncompromising Quality",
+          "description": "Every hotel in our collection is hand-picked and vetted to meet our exacting standards — from thread-count to Michelin stars."
+        },
+        {
+          "title": "Genuine Hospitality",
+          "description": "We believe true luxury is about how you feel, not just what you see. Our partners share our passion for making guests feel at home, anywhere."
+        },
+        {
+          "title": "Trust & Transparency",
+          "description": "No hidden fees. No surprises. We show you exactly what you're booking — real photos, real reviews, real prices."
+        },
+        {
+          "title": "Responsible Travel",
+          "description": "We actively promote eco-certified properties and support initiatives that protect the destinations we all love to visit."
+        }
+      ],
+      "timelineEyebrow": "Our Journey",
+      "timelineTitle": "Milestones",
+      "milestones": [
+        {
+          "year": "2016",
+          "title": "Founded in Paris",
+          "description": "Selora was born from a simple idea — make the world's best hotels accessible to everyone."
+        },
+        {
+          "year": "2018",
+          "title": "50 Hotels Milestone",
+          "description": "Expanded our portfolio across Europe, with our first Asian partners joining the collection."
+        },
+        {
+          "year": "2020",
+          "title": "Global Reach",
+          "description": "Survived and thrived through challenging times, emerging with a stronger, more diverse portfolio."
+        },
+        {
+          "year": "2022",
+          "title": "Award-Winning Platform",
+          "description": "Named Best Luxury Travel Platform by Condé Nast Traveller readers for two consecutive years."
+        },
+        {
+          "year": "2024",
+          "title": "50,000 Guests Served",
+          "description": "A community of discerning travellers who trust Selora for every extraordinary stay."
+        }
+      ],
+      "teamEyebrow": "The People Behind Selora",
+      "teamTitle": "Meet the Team",
+      "teamSubtitle": "Hospitality veterans, travel writers and experience designers — united by an obsession with the perfect stay.",
+      "team": [
+        {
+          "name": "Isabelle Fontaine",
+          "role": "Founder & CEO",
+          "bio": "Former hospitality director with 20 years across Parisian palace hotels. Isabelle founded Selora to bring insider access to every traveller.",
+          "location": "Paris, France"
+        },
+        {
+          "name": "James Whitfield",
+          "role": "Head of Curation",
+          "bio": "Luxury travel journalist turned hotelier scout. James has personally inspected over 300 properties across six continents.",
+          "location": "London, UK"
+        },
+        {
+          "name": "Yuki Tanaka",
+          "role": "Guest Experience Director",
+          "bio": "With roots in ryokan culture, Yuki leads our concierge team to craft bespoke itineraries that go far beyond the hotel room.",
+          "location": "Tokyo, Japan"
+        },
+        {
+          "name": "Marco Esposito",
+          "role": "Partnerships Director",
+          "bio": "Former General Manager at three Relais & Châteaux properties, Marco builds lasting relationships with the world's finest hoteliers.",
+          "location": "Rome, Italy"
+        }
+      ],
+      "ctaTitle": "Ready for an Extraordinary Stay?",
+      "ctaSubtitle": "Browse our curated collection of 220 premium hotels across 11 cities — and find your perfect match today.",
+      "ctaExplore": "Explore Hotels",
+      "ctaJoin": "Get in Touch"
+    },
+    "blog": {
+      "heroBadge": "The Selora Journal",
+      "heroTitle": "Stories Worth Reading",
+      "heroSubtitle": "Travel guides, hotel reviews, and insider knowledge from our team of luxury travel experts.",
+      "editorsPick": "Editor's Pick",
+      "readMore": "Read more",
+      "readArticle": "Read article",
+      "searchPlaceholder": "Search articles…",
+      "noResults": "No articles match your search.",
+      "clearFilters": "Clear filters",
+      "newsletterTitle": "Stay in the Know",
+      "newsletterText": "Get our best travel stories, hotel recommendations, and insider tips delivered to your inbox every two weeks.",
+      "newsletterPlaceholder": "Your email address",
+      "subscribe": "Subscribe",
+      "subscribeSuccess": "You've subscribed! Watch your inbox for the best travel stories.",
+      "newsletterAlreadySubscribed": "You're already subscribed to our newsletter!",
+      "subscribing": "Subscribing...",
+      "newsletterPrivacy": "No spam, ever. Unsubscribe anytime.",
+      "categories": [
+        "All",
+        "Travel Guides",
+        "Hotel Reviews",
+        "Insider Tips",
+        "Sustainability",
+        "Food & Dining",
+        "Culture"
+      ],
+      "featured": {
+        "category": "Insider Tips",
+        "date": "April 2, 2025",
+        "readTime": "8 min read",
+        "title": "The Art of Choosing a Luxury Hotel: What the Stars Don't Tell You",
+        "excerpt": "Star ratings are just the beginning. Our curation team reveals the seven hidden factors that separate truly exceptional hotels from merely expensive ones — from the quality of natural light in rooms to the philosophy behind staff recruitment.",
+        "authorName": "Isabelle Fontaine",
+        "authorRole": "Founder & CEO"
+      },
+      "posts": [
+        {
+          "category": "Travel Guides",
+          "date": "March 28, 2025",
+          "readTime": "6 min read",
+          "title": "Tokyo After Dark: The Finest Ryokans and Boutique Hotels for Night Owls",
+          "excerpt": "From the lantern-lit alleys of Yanaka to the neon shimmer of Shinjuku — we map the best places to rest your head in Japan's electric capital."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "March 20, 2025",
+          "readTime": "5 min read",
+          "title": "We Stayed at Bali's Most Talked-About New Resort — Here's the Honest Truth",
+          "excerpt": "When a property goes viral before it even opens, expectations are sky-high. Our reviewer spent four nights and came back with a nuanced verdict."
+        },
+        {
+          "category": "Sustainability",
+          "date": "March 14, 2025",
+          "readTime": "7 min read",
+          "title": "Luxury and Sustainability Are No Longer at Odds — Here's the Proof",
+          "excerpt": "Six remarkable eco-certified hotels proving that environmental responsibility and five-star comfort are not just compatible — they're complementary."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "March 7, 2025",
+          "readTime": "4 min read",
+          "title": "Breakfast as a Destination: 8 Hotels Whose Morning Spreads Are Worth Booking For",
+          "excerpt": "Forget the buffet. These hotels have elevated breakfast into a cultural experience — from kaiseki mornings in Kyoto to pastry masterclasses in Paris."
+        },
+        {
+          "category": "Culture",
+          "date": "February 27, 2025",
+          "readTime": "9 min read",
+          "title": "Staying in History: Europe's Most Magnificent Palace Hotels",
+          "excerpt": "Monarchs slept here. So can you. A guide to Europe's grandest palace-turned-hotels — where centuries of history come with impeccable room service."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "February 19, 2025",
+          "readTime": "5 min read",
+          "title": "How to Get a Suite Upgrade (Without Asking): Industry Secrets Revealed",
+          "excerpt": "Our network of hotel GMs and concierge veterans share the little-known behaviours and booking habits that dramatically increase your chances of an upgrade."
+        },
+        {
+          "category": "Travel Guides",
+          "date": "February 12, 2025",
+          "readTime": "7 min read",
+          "title": "Paris Beyond the Palace Hotels: The City's Most Underrated Luxury Stays",
+          "excerpt": "Everyone knows the Ritz and the Bristol. But Paris hides a dozen remarkable smaller hotels where the service is just as impeccable and the rooms far more personal."
+        },
+        {
+          "category": "Travel Guides",
+          "date": "January 28, 2025",
+          "readTime": "8 min read",
+          "title": "A First-Timer's Guide to Booking a Maldives Overwater Villa",
+          "excerpt": "From choosing the right atoll to understanding meal plans and transfer times — everything you need to know before you commit to the most Instagrammed hotel category on earth."
+        },
+        {
+          "category": "Travel Guides",
+          "date": "January 14, 2025",
+          "readTime": "6 min read",
+          "title": "The 7 Most Scenic Train Routes to Reach a Luxury Hotel",
+          "excerpt": "Arrival is part of the experience. These railway journeys — through the Swiss Alps, Italian Riviera, and Scottish Highlands — deliver you to the hotel door already transformed."
+        },
+        {
+          "category": "Travel Guides",
+          "date": "December 30, 2024",
+          "readTime": "5 min read",
+          "title": "Solo Travel, Luxury Style: Hotels That Welcome You to Arrive Alone",
+          "excerpt": "Solo travellers deserve more than a single supplement. These hotels have redesigned their offering to celebrate the independent guest — solo menus, communal tables, and curated programmes included."
+        },
+        {
+          "category": "Travel Guides",
+          "date": "December 10, 2024",
+          "readTime": "9 min read",
+          "title": "Winter Escapes: Where to Book a Luxury Hotel When Everyone Else Is Going South",
+          "excerpt": "From a firelit château in the Dordogne to a glass-walled cabin in Finnish Lapland — the best cold-weather stays are anything but ordinary."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "March 5, 2025",
+          "readTime": "6 min read",
+          "title": "One Night at the Cipriani: A Venice Experience That Defies Description",
+          "excerpt": "You arrive by private boat, you sleep in a room with frescoed ceilings, and breakfast comes with a view of the Giudecca Canal. Some hotels simply cannot be reviewed — only experienced."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "February 22, 2025",
+          "readTime": "5 min read",
+          "title": "The Amanjiwo Borobudur Review: Silence, Stone, and Spiritual Luxury",
+          "excerpt": "Waking at sunrise to watch light creep across Borobudur's ancient terraces — from the comfort of a pavilion suite — is among the most quietly extraordinary hotel experiences we've ever had."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "February 5, 2025",
+          "readTime": "7 min read",
+          "title": "We Tried the New Desert Resort Everyone Is Whispering About — Is It Worth the Hype?",
+          "excerpt": "Forty private tents, no children under 12, no Wi-Fi in the dining tent. A Jordanian desert camp that has redefined what remote luxury can look and feel like."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "January 20, 2025",
+          "readTime": "5 min read",
+          "title": "Checking In at Capri's Most Talked-About New Hotel: First Impressions",
+          "excerpt": "The latest opening on the island promises terrace dining over the Faraglioni rocks and interiors by a Rome-based atelier. We were among the first to stay."
+        },
+        {
+          "category": "Hotel Reviews",
+          "date": "December 18, 2024",
+          "readTime": "8 min read",
+          "title": "The Brando Private Island Resort: A Week in Paradise, Honestly Reviewed",
+          "excerpt": "Marlon Brando's personal island in French Polynesia is now a 35-villa eco-resort. We spent a week testing every promise the brochure makes."
+        },
+        {
+          "category": "Sustainability",
+          "date": "February 28, 2025",
+          "readTime": "6 min read",
+          "title": "Carbon-Neutral by 2026: How One Scottish Estate Is Leading the Way",
+          "excerpt": "A 4,000-acre Highland estate has made a public commitment — and is sticking to it. We explore the real, unglamorous work behind luxury hospitality's green revolution."
+        },
+        {
+          "category": "Sustainability",
+          "date": "February 10, 2025",
+          "readTime": "5 min read",
+          "title": "The Hotels That Refuse to Use Single-Use Plastics — and What They Use Instead",
+          "excerpt": "Beeswax wrapping, bamboo toiletry dispensers, and refillable glass carafes. Small decisions with real impact — and no compromise on the guest experience."
+        },
+        {
+          "category": "Sustainability",
+          "date": "January 25, 2025",
+          "readTime": "7 min read",
+          "title": "Farm-to-Room: The Estates Where Everything You Eat Is Grown on Site",
+          "excerpt": "These hotel farms — from a Cotswolds walled garden to a Sicilian biodynamic vineyard — are rewriting what breakfast, lunch, and dinner can mean for a travelling guest."
+        },
+        {
+          "category": "Sustainability",
+          "date": "January 8, 2025",
+          "readTime": "6 min read",
+          "title": "Wildlife Conservation and Luxury Lodges: A Partnership That Works",
+          "excerpt": "In Botswana's Okavango Delta, staying at a luxury camp isn't just indulgent — it directly funds anti-poaching patrols and community scholarships. Here's how it works."
+        },
+        {
+          "category": "Sustainability",
+          "date": "December 22, 2024",
+          "readTime": "4 min read",
+          "title": "How to Offset Your Hotel Stay's Carbon Footprint — Properly",
+          "excerpt": "Not all offset schemes are equal. We break down the most credible programmes, explain what 'verified' actually means, and tell you which hotels are doing it right."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "March 1, 2025",
+          "readTime": "5 min read",
+          "title": "Room Service Reinvented: The Hotels Making In-Room Dining Worth Choosing",
+          "excerpt": "For years, room service was a trade-off — convenience at the cost of quality. These five hotel kitchens have destroyed that assumption entirely."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "February 14, 2025",
+          "readTime": "6 min read",
+          "title": "The Best Hotel Bars in the World: Cocktails That Justify the Air Fare",
+          "excerpt": "From a rooftop gin programme in Singapore to a cellar bar in a 14th-century Austrian castle — the drinks lists at these hotel bars reward serious attention."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "January 29, 2025",
+          "readTime": "7 min read",
+          "title": "Chef's Table at the Hotel: Why More Michelin Stars Are Moving Into Bedrooms",
+          "excerpt": "In-house restaurants with Michelin recognition are no longer a rarity at top-tier hotels. We explore what's driving the trend and which property has the most dazzling table."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "January 12, 2025",
+          "readTime": "5 min read",
+          "title": "The Private Picnic Experience: Hotels That Send You Off with a Hamper Worth Having",
+          "excerpt": "A wicker basket, a cashmere blanket, a bottle of something excellent — and a spot chosen for you by the concierge. The portable luxury lunch has never been better executed."
+        },
+        {
+          "category": "Food & Dining",
+          "date": "December 28, 2024",
+          "readTime": "4 min read",
+          "title": "Sake, Soba, and Seasonal Kaiseki: Understanding Japanese Hotel Dining from the Inside",
+          "excerpt": "A meal at a ryokan isn't just food — it's a structured encounter with place, season, and philosophy. Here is how to read, appreciate, and fully enjoy it."
+        },
+        {
+          "category": "Culture",
+          "date": "March 10, 2025",
+          "readTime": "6 min read",
+          "title": "Art Hotels Done Right: Where the Collection Is as Good as the Rooms",
+          "excerpt": "These hotels don't just hang paintings on walls — they are serious art venues. Curated in collaboration with galleries, managed by art directors, and sometimes home to international artists in residence."
+        },
+        {
+          "category": "Culture",
+          "date": "February 24, 2025",
+          "readTime": "8 min read",
+          "title": "The Literary Hotels: Where Writers Have Slept, Written, and Lived",
+          "excerpt": "Hemingway's Bar at the Ritz is only the beginning. From Agatha Christie's Egypt to Fitzgerald's Riviera — these hotels carry literary history in their walls."
+        },
+        {
+          "category": "Culture",
+          "date": "February 8, 2025",
+          "readTime": "7 min read",
+          "title": "Staying Inside History: The Best Converted Castles, Monasteries, and Palaces in Europe",
+          "excerpt": "There is something uniquely affecting about sleeping inside a building that watched centuries pass. These European conversions preserve beauty while adding every modern comfort."
+        },
+        {
+          "category": "Culture",
+          "date": "January 22, 2025",
+          "readTime": "5 min read",
+          "title": "Music, Architecture, and the Hotels That Celebrate Local Identity",
+          "excerpt": "The best hotels don't import a generic version of luxury — they express the culture of where they stand. Six remarkable properties doing this better than anywhere else."
+        },
+        {
+          "category": "Culture",
+          "date": "January 5, 2025",
+          "readTime": "6 min read",
+          "title": "Festivals and Fine Hotels: How to Combine Cultural Events with Exceptional Stays",
+          "excerpt": "Venice Biennale, Edinburgh Festival, Cannes — the world's great cultural events deserve accommodation that matches their ambition. Here's how to plan both at once."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "March 15, 2025",
+          "readTime": "4 min read",
+          "title": "The Best Time to Book a Luxury Hotel for the Best Price",
+          "excerpt": "Yield management is a science. We asked three revenue managers to explain exactly when the algorithms drop prices — and how to be there when they do."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "February 26, 2025",
+          "readTime": "6 min read",
+          "title": "What to Write in Special Requests (and What Not to Write)",
+          "excerpt": "The special requests field is not a wish list. Used correctly, it can transform your stay. Our team of former concierges explains the art of the perfect pre-arrival note."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "February 3, 2025",
+          "readTime": "5 min read",
+          "title": "Early Check-In, Late Check-Out: How to Actually Get What You Want",
+          "excerpt": "Asking at the desk never works. Knowing when and how to request these extensions — and which hotels are genuinely flexible — makes all the difference."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "January 17, 2025",
+          "readTime": "7 min read",
+          "title": "Ten Things Your Hotel Concierge Can Do That You've Never Thought to Ask",
+          "excerpt": "From securing last-minute restaurant tables to arranging a private helicopter transfer — the list of what a skilled concierge will do for the right guest is surprisingly long."
+        },
+        {
+          "category": "Insider Tips",
+          "date": "December 15, 2024",
+          "readTime": "5 min read",
+          "title": "Why Loyalty Programmes at Independent Hotels Are Better Than Chain Points",
+          "excerpt": "Marriott Bonvoy and Hilton Honors are fine. But the relationship you build with a small, independent hotel — and what it earns you — is a different proposition entirely."
+        }
+      ]
+    },
+    "press": {
+      "heroBadge": "Press & Media",
+      "heroTitle": "Selora in the News",
+      "heroSubtitle": "The world's leading travel publications trust Selora. Find our latest coverage, press releases, awards and media resources all in one place.",
+      "asSeenIn": "As Seen In",
+      "featuredCoverageTitle": "Featured Coverage",
+      "recognition": "Recognition",
+      "awardsTitle": "Awards & Honours",
+      "latestNews": "Latest News",
+      "pressReleasesTitle": "Press Releases",
+      "mediaResources": "Media Resources",
+      "mediaKitTitle": "Download Our Media Kit",
+      "mediaKitText": "Journalists and media professionals can download our complete brand assets, including high-resolution logos, product screenshots, and executive portraits.",
+      "download": "Download",
+      "brandOverviewTitle": "Selora at a Glance",
+      "brandOverviewText": "Key facts and figures for journalists and media partners looking to understand our platform, reach, and impact.",
+      "brandStat1Label": "Premium Hotels",
+      "brandStat1Value": "220",
+      "brandStat2Label": "Cities",
+      "brandStat2Value": "11",
+      "brandStat3Label": "Happy Guests",
+      "brandStat3Value": "50K+",
+      "brandStat4Label": "Average Rating",
+      "brandStat4Value": "4.8★",
+      "coverageIn": "Coverage in",
+      "outlets": "{{count}}+ outlets",
+      "pressEnquiriesTitle": "Press Enquiries",
+      "pressEnquiriesText": "Our communications team is available for interviews, comments, and media partnerships. We aim to respond to all press enquiries within 24 hours.",
+      "pressContact": "Press contact",
+      "contactPressTeam": "Contact Press Team",
+      "readFullArticle": "Read full article",
+      "featuredCoverage": [
+        {
+          "outlet": "Condé Nast Traveller",
+          "logo": "CNT",
+          "date": "March 2025",
+          "title": "The 10 Best Hotel Booking Platforms of 2025",
+          "excerpt": "Selora stands out from the crowd with its obsessive focus on curation — only the finest independent and boutique properties make the cut, making every search feel effortless.",
+          "tag": "Featured"
+        },
+        {
+          "outlet": "Forbes Travel Guide",
+          "logo": "Forbes",
+          "date": "January 2025",
+          "title": "How Selora Is Redefining Luxury Hotel Discovery",
+          "excerpt": "In an era of endless choice, Selora has taken the opposite approach: radical curation. The result is a platform where every listed property is genuinely worth your time and money.",
+          "tag": "Cover Story"
+        },
+        {
+          "outlet": "The Financial Times",
+          "logo": "FT",
+          "date": "November 2024",
+          "title": "Luxury Travel Platforms That Are Actually Worth It",
+          "excerpt": "Unlike aggregators that list everything under the sun, Selora curates with conviction. Their rejection rate of over 80% is the highest in the industry — and guests feel the difference.",
+          "tag": "Review"
+        }
+      ],
+      "pressReleases": [
+        {
+          "date": "April 2025",
+          "title": "Selora Surpasses 50,000 Guests Served Worldwide",
+          "summary": "The luxury travel platform celebrates a major milestone as it continues global expansion."
+        },
+        {
+          "date": "February 2025",
+          "title": "Selora Launches Sustainable Travel Initiative",
+          "summary": "New eco-certification badge programme highlights environmentally responsible properties across the portfolio."
+        },
+        {
+          "date": "December 2024",
+          "title": "Selora Named Best Luxury Booking Platform — Readers' Choice 2024",
+          "summary": "Condé Nast Traveller Readers' Choice Awards recognise Selora for the second consecutive year."
+        },
+        {
+          "date": "September 2024",
+          "title": "Selora Expands to Southeast Asia with 12 New Properties",
+          "summary": "Singapore, Bali, and Bangkok welcome the platform's signature curated approach to luxury accommodation."
+        },
+        {
+          "date": "June 2024",
+          "title": "Selora Partners with Relais & Châteaux",
+          "summary": "Strategic partnership brings 30 iconic Relais & Châteaux properties exclusively to the Selora platform."
+        },
+        {
+          "date": "March 2024",
+          "title": "Selora Raises Series B to Accelerate Global Curation",
+          "summary": "€24M funding round led by European luxury fund to expand the curation team and technology platform."
+        }
+      ],
+      "awards": [
+        {
+          "year": "2025",
+          "award": "Best Luxury Travel Platform",
+          "body": "World Travel Awards"
+        },
+        {
+          "year": "2024",
+          "award": "Readers' Choice — Best Hotel Booking",
+          "body": "Condé Nast Traveller"
+        },
+        {
+          "year": "2024",
+          "award": "Top 50 Travel Innovators",
+          "body": "Skift"
+        },
+        {
+          "year": "2023",
+          "award": "Editor's Pick — Luxury Tech",
+          "body": "Wallpaper*"
+        },
+        {
+          "year": "2023",
+          "award": "Best User Experience — Travel",
+          "body": "Webby Awards"
+        },
+        {
+          "year": "2022",
+          "award": "Rising Star in Luxury Hospitality",
+          "body": "Hospitality Tech Europe"
+        }
+      ],
+      "mediaAssets": [
+        {
+          "label": "Brand Logos (SVG + PNG)",
+          "size": "2.4 MB"
+        },
+        {
+          "label": "Press Kit PDF",
+          "size": "8.1 MB"
+        },
+        {
+          "label": "Product Screenshots",
+          "size": "14.6 MB"
+        },
+        {
+          "label": "Executive Headshots",
+          "size": "11.2 MB"
+        }
+      ]
+    },
+    "careers": {
+      "heroBadge": "Join the Team",
+      "heroTitle": "Build the Future of Luxury Travel",
+      "heroSubtitle": "We're a small, ambitious team obsessed with making exceptional hotel stays accessible to every discerning traveller. Come help us do it.",
+      "whySelora": "Why Selora",
+      "lifeAtSelora": "Life at Selora",
+      "perksLead": "We believe the people who build the best travel platform deserve the best experience too.",
+      "nowHiring": "Now Hiring",
+      "openPositions": "Open Positions",
+      "searchPlaceholder": "Search roles…",
+      "noResults": "No positions match your search.",
+      "clearFilters": "Clear filters",
+      "whatWereLookingFor": "What we're looking for:",
+      "applyForRole": "Apply for this role",
+      "openApplicationTitle": "Don't See Your Role?",
+      "openApplicationText": "We're always interested in exceptional people, even when we don't have a specific opening. Send us your CV and tell us how you'd contribute to Selora.",
+      "sendOpenApplication": "Send an Open Application",
+      "stats": [
+        {
+          "value": "42",
+          "label": "Team Members"
+        },
+        {
+          "value": "18",
+          "label": "Nationalities"
+        },
+        {
+          "value": "12",
+          "label": "Countries"
+        },
+        {
+          "value": "4.9★",
+          "label": "Glassdoor Rating"
+        }
+      ],
+      "perks": [
+        {
+          "title": "Travel Stipend",
+          "description": "€3,000 per year to stay at hotels in our collection — because you can't curate what you haven't experienced."
+        },
+        {
+          "title": "Remote-First",
+          "description": "Work from wherever you do your best thinking. We have team members across 12 countries and four time zones."
+        },
+        {
+          "title": "Growth & Learning",
+          "description": "€1,500 annual budget for courses, conferences, and books. We invest in your development as much as you do."
+        },
+        {
+          "title": "Generous Leave",
+          "description": "35 days of paid leave per year — including your birthday off, no questions asked."
+        },
+        {
+          "title": "Equity for Everyone",
+          "description": "All full-time employees receive stock options. When Selora grows, everyone benefits."
+        },
+        {
+          "title": "Diverse & Inclusive",
+          "description": "Our team spans 18 nationalities and speaks 24 languages. Different perspectives make us stronger."
+        }
+      ],
+      "departments": [
+        "All",
+        "Curation",
+        "Engineering",
+        "Design",
+        "Marketing",
+        "Operations"
+      ],
+      "openings": [
+        {
+          "id": "curator-apac",
+          "title": "Senior Hotel Curator — Asia Pacific",
+          "department": "Curation",
+          "location": "Remote (APAC)",
+          "type": "Full-time",
+          "description": "You'll scout, evaluate, and onboard new properties across Southeast and East Asia. Expect frequent travel, deep relationships with GMs, and the satisfaction of finding hidden gems before anyone else does.",
+          "requirements": [
+            "5+ years in luxury hospitality (hotel management, travel media, or similar)",
+            "Fluency in English + one Asian language",
+            "Willingness to travel up to 50% of the time",
+            "Sharp eye for authentic luxury vs. superficial opulence"
+          ]
+        },
+        {
+          "id": "fullstack",
+          "title": "Full-Stack Engineer (React / Node)",
+          "department": "Engineering",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "Join the team building the platform that thousands of travellers trust to plan their most important trips. You'll work on search, personalisation, booking flows, and the internal tools our curation team relies on.",
+          "requirements": [
+            "3+ years with React and TypeScript",
+            "Solid Node.js / Express experience",
+            "Comfort with PostgreSQL and RESTful API design",
+            "Appreciation for clean, maintainable code"
+          ]
+        },
+        {
+          "id": "lead-designer",
+          "title": "Lead Product Designer",
+          "department": "Design",
+          "location": "Paris or Remote",
+          "type": "Full-time",
+          "description": "Own the end-to-end design of Selora — from first impression to post-checkout. You'll define our design language, lead user research, and work shoulder-to-shoulder with engineering to ship beautiful, functional experiences.",
+          "requirements": [
+            "Portfolio showing strong interaction and visual design",
+            "Experience with Figma and modern design systems",
+            "User research and usability testing experience",
+            "Luxury or travel category experience is a bonus"
+          ]
+        },
+        {
+          "id": "content-seo",
+          "title": "Content & SEO Strategist",
+          "department": "Marketing",
+          "location": "Remote (EU)",
+          "type": "Full-time",
+          "description": "You'll own our editorial calendar, grow organic traffic, and ensure every word on Selora reflects our voice — authoritative, warm, and never stuffy. Our blog reaches 200k monthly readers and we want to double that.",
+          "requirements": [
+            "Proven track record growing organic search traffic",
+            "Exceptional writing and editing in English",
+            "Experience with content strategy for travel or lifestyle brands",
+            "Familiarity with SEO tools (Ahrefs, Semrush, etc.)"
+          ]
+        },
+        {
+          "id": "partnerships",
+          "title": "Hotel Partnerships Manager",
+          "department": "Operations",
+          "location": "London or Remote",
+          "type": "Full-time",
+          "description": "You'll manage relationships with 40+ hotel partners — negotiating rates, resolving issues, and ensuring every property in our collection continues to meet our standards. You're the bridge between hoteliers and our guests.",
+          "requirements": [
+            "3+ years in hotel partnerships, revenue management, or OTA relations",
+            "Strong negotiation and relationship-building skills",
+            "Data-comfortable — you can analyse booking performance and spot trends",
+            "European language skills are a strong plus"
+          ]
+        },
+        {
+          "id": "junior-curator",
+          "title": "Junior Curator (Internship)",
+          "department": "Curation",
+          "location": "Paris (Hybrid)",
+          "type": "Internship · 6 months",
+          "description": "A rare opportunity to learn hotel curation from the inside. You'll assist senior curators, conduct desk research on new markets, write property briefs, and occasionally join inspection trips.",
+          "requirements": [
+            "Passion for travel and luxury hospitality",
+            "Strong research and writing skills in English",
+            "Based in or able to relocate to Paris for the duration",
+            "Currently enrolled in a relevant degree programme"
+          ]
+        },
+        {
+          "id": "curator-europe",
+          "title": "Senior Hotel Curator — Europe",
+          "department": "Curation",
+          "location": "Remote (EU)",
+          "type": "Full-time",
+          "description": "You'll identify and onboard outstanding independent hotels across Western and Southern Europe, building lasting relationships with owners and GMs to grow our most established regional portfolio.",
+          "requirements": [
+            "5+ years in luxury hospitality or travel media",
+            "Deep knowledge of European hotel landscape",
+            "Existing network of hotel contacts in the region",
+            "Fluency in English and at least one Romance language"
+          ]
+        },
+        {
+          "id": "curator-middle-east",
+          "title": "Hotel Curator — Middle East & Africa",
+          "department": "Curation",
+          "location": "Remote (MENA)",
+          "type": "Full-time",
+          "description": "An exciting opportunity to build our presence in one of the world's most dynamic hospitality markets, from boutique riads in Marrakech to desert lodges in Wadi Rum.",
+          "requirements": [
+            "3+ years in luxury travel or hospitality management",
+            "Knowledge of MENA hospitality landscape",
+            "Arabic or French language skills are a strong advantage",
+            "Willingness to travel up to 40% of the time"
+          ]
+        },
+        {
+          "id": "curator-quality",
+          "title": "Quality Standards Manager",
+          "department": "Curation",
+          "location": "Paris or Remote",
+          "type": "Full-time",
+          "description": "You'll maintain and evolve our curation criteria, develop inspection frameworks, and train the curation team on how to identify and document quality consistently across all property types.",
+          "requirements": [
+            "Background in luxury hospitality quality assurance",
+            "Experience designing evaluation frameworks",
+            "Exceptional attention to detail",
+            "Strong written communication in English and French"
+          ]
+        },
+        {
+          "id": "backend-engineer",
+          "title": "Senior Backend Engineer (Node / PostgreSQL)",
+          "department": "Engineering",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll own the API layer, data models, and infrastructure that power Selora's booking engine and curation tools. We value clean code, thoughtful architecture, and engineers who care about reliability.",
+          "requirements": [
+            "4+ years with Node.js and TypeScript",
+            "Expert knowledge of PostgreSQL and query optimisation",
+            "Experience with REST API design and documentation",
+            "Familiarity with CI/CD pipelines and containerisation"
+          ]
+        },
+        {
+          "id": "mobile-engineer",
+          "title": "Mobile Engineer (React Native)",
+          "department": "Engineering",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "We're building a native mobile experience that matches our web platform's quality. You'll own the iOS and Android apps from architecture to App Store delivery, working closely with design.",
+          "requirements": [
+            "3+ years with React Native",
+            "Experience shipping to App Store and Google Play",
+            "Strong understanding of mobile UX patterns",
+            "TypeScript proficiency required"
+          ]
+        },
+        {
+          "id": "devops",
+          "title": "DevOps / Platform Engineer",
+          "department": "Engineering",
+          "location": "Remote (EU or US)",
+          "type": "Full-time",
+          "description": "You'll design and maintain the infrastructure that keeps Selora fast, reliable, and secure for thousands of travellers. We use AWS, Terraform, and GitHub Actions — and you'll improve all of it.",
+          "requirements": [
+            "Experience with AWS or equivalent cloud platforms",
+            "Infrastructure-as-code with Terraform or Pulumi",
+            "Strong understanding of security best practices",
+            "Kubernetes or ECS container orchestration experience"
+          ]
+        },
+        {
+          "id": "qa-engineer",
+          "title": "QA Engineer",
+          "department": "Engineering",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll build automated test suites, run exploratory testing sessions, and ensure every release goes out to guests with complete confidence. Quality is non-negotiable at Selora.",
+          "requirements": [
+            "Experience with end-to-end and API test automation",
+            "Familiarity with tools like Playwright, Cypress, or similar",
+            "Ability to work closely with developers on test coverage",
+            "A methodical, detail-oriented mindset"
+          ]
+        },
+        {
+          "id": "data-engineer",
+          "title": "Data Engineer",
+          "department": "Engineering",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll build the data pipelines, warehouse, and analytics infrastructure that help our team make better decisions — from pricing and availability to curation quality signals.",
+          "requirements": [
+            "Experience with data pipeline tooling (dbt, Airflow, etc.)",
+            "SQL proficiency and experience with data warehouses",
+            "Python scripting ability",
+            "Experience working with product and business teams on metrics"
+          ]
+        },
+        {
+          "id": "ux-researcher",
+          "title": "UX Researcher",
+          "department": "Design",
+          "location": "Paris or Remote",
+          "type": "Full-time",
+          "description": "You'll run qualitative and quantitative research programmes to understand how travellers think, decide, and feel. Your insights will directly inform product roadmap prioritisation.",
+          "requirements": [
+            "3+ years in UX research, preferably in consumer products",
+            "Experience with usability testing, interviews, and surveys",
+            "Ability to communicate findings persuasively to stakeholders",
+            "Background in travel or e-commerce is a strong advantage"
+          ]
+        },
+        {
+          "id": "motion-designer",
+          "title": "Motion Designer",
+          "department": "Design",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll bring Selora's brand to life through video, animation, and interactive media. From brand films to onboarding animations, you'll craft motion work that sets us apart.",
+          "requirements": [
+            "Strong portfolio of motion and video work",
+            "Proficiency in After Effects, Lottie, and Figma",
+            "Experience creating brand-led animations",
+            "An eye for typography, colour, and pacing"
+          ]
+        },
+        {
+          "id": "design-systems",
+          "title": "Design Systems Designer",
+          "department": "Design",
+          "location": "Remote (EU or US)",
+          "type": "Full-time",
+          "description": "You'll own and evolve our design system — the component library, token system, and documentation that unifies the experience across web and mobile.",
+          "requirements": [
+            "Deep expertise in design systems and component libraries",
+            "Experience with Figma and Storybook",
+            "Ability to work closely with frontend engineers",
+            "Strong written communication for documentation"
+          ]
+        },
+        {
+          "id": "brand-designer",
+          "title": "Brand Designer",
+          "department": "Design",
+          "location": "Paris or Remote",
+          "type": "Full-time",
+          "description": "You'll define and apply Selora's visual identity across every touchpoint — from editorial layouts and photography direction to campaign assets and partner materials.",
+          "requirements": [
+            "Portfolio demonstrating luxury brand or editorial design",
+            "Expertise in Adobe Creative Suite and Figma",
+            "Experience art directing photography shoots",
+            "A refined aesthetic sensibility suited to high-end travel"
+          ]
+        },
+        {
+          "id": "junior-designer",
+          "title": "Junior Visual Designer",
+          "department": "Design",
+          "location": "Remote (EU)",
+          "type": "Full-time",
+          "description": "A fantastic opportunity to grow as a designer within a luxury brand environment. You'll support the design team on campaign assets, social media visuals, and UI components.",
+          "requirements": [
+            "1–2 years of commercial design experience",
+            "Proficiency in Figma and Adobe Illustrator",
+            "Strong visual communication instincts",
+            "Passion for travel and design"
+          ]
+        },
+        {
+          "id": "pr-manager",
+          "title": "PR & Communications Manager",
+          "department": "Marketing",
+          "location": "London or Remote",
+          "type": "Full-time",
+          "description": "You'll manage press relationships, pitch story angles, secure coverage in luxury travel media, and represent the Selora brand at industry events and press trips.",
+          "requirements": [
+            "4+ years in PR, ideally within luxury travel or lifestyle",
+            "Established relationships with travel media contacts",
+            "Exceptional written communication in English",
+            "Experience managing press trips and media events"
+          ]
+        },
+        {
+          "id": "social-media",
+          "title": "Social Media & Community Manager",
+          "department": "Marketing",
+          "location": "Remote (EU or US)",
+          "type": "Full-time",
+          "description": "You'll grow and manage Selora's presence across Instagram, TikTok, and Pinterest — creating content, managing the community, and working with partner hotels on co-branded campaigns.",
+          "requirements": [
+            "3+ years managing social media for a lifestyle or travel brand",
+            "Experience with content creation and short-form video",
+            "Strong aesthetic sensibility and editorial judgement",
+            "Data-driven approach to content performance"
+          ]
+        },
+        {
+          "id": "performance-marketing",
+          "title": "Performance Marketing Manager",
+          "department": "Marketing",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll plan, execute, and optimise paid campaigns across Google, Meta, and Pinterest — driving guest acquisition with a relentless focus on LTV, ROAS, and efficient spend.",
+          "requirements": [
+            "3+ years running paid campaigns with significant budgets",
+            "Deep expertise in Google Ads and Meta Ads platforms",
+            "Strong analytical skills and proficiency with attribution tools",
+            "Experience in e-commerce or travel verticals preferred"
+          ]
+        },
+        {
+          "id": "email-crm",
+          "title": "Email & CRM Manager",
+          "department": "Marketing",
+          "location": "Remote (EU)",
+          "type": "Full-time",
+          "description": "You'll own the full email programme — from welcome journeys and lifecycle automations to editorial newsletters — ensuring every message to our guests is relevant, timely, and beautifully crafted.",
+          "requirements": [
+            "3+ years managing CRM and email programmes",
+            "Proficiency with email platforms (Klaviyo, Braze, or similar)",
+            "Strong copywriting and segmentation skills",
+            "Data-led approach to open rates, click-through, and revenue"
+          ]
+        },
+        {
+          "id": "partnerships-manager",
+          "title": "Hotel Partnerships Associate",
+          "department": "Operations",
+          "location": "Remote (EU)",
+          "type": "Full-time",
+          "description": "You'll support the partnerships team in managing day-to-day relationships with hotel partners, coordinating rate agreements, handling invoicing queries, and ensuring content is kept up to date.",
+          "requirements": [
+            "1–2 years in hospitality, OTA, or B2B partnerships",
+            "Excellent organisational and communication skills",
+            "Comfortable working with spreadsheets and CRM tools",
+            "European language skills are a strong advantage"
+          ]
+        },
+        {
+          "id": "guest-experience",
+          "title": "Guest Experience Specialist",
+          "department": "Operations",
+          "location": "Remote (Global)",
+          "type": "Full-time",
+          "description": "You'll be the first point of contact for our guests — handling complex bookings, resolving issues with charm and efficiency, and ensuring every interaction leaves guests feeling genuinely cared for.",
+          "requirements": [
+            "Background in luxury hospitality or premium customer service",
+            "Excellent written and verbal English",
+            "Empathy, patience, and problem-solving instincts",
+            "Multilingual candidates strongly preferred"
+          ]
+        },
+        {
+          "id": "revenue-analyst",
+          "title": "Revenue & Analytics Analyst",
+          "department": "Operations",
+          "location": "Paris or Remote",
+          "type": "Full-time",
+          "description": "You'll analyse booking patterns, pricing data, and partner performance to generate insights that improve revenue outcomes for both Selora and its hotel partners.",
+          "requirements": [
+            "2+ years in revenue management or data analytics",
+            "Strong SQL and Excel skills",
+            "Experience with hotel or travel industry data preferred",
+            "Ability to communicate findings clearly to non-technical audiences"
+          ]
+        },
+        {
+          "id": "legal-counsel",
+          "title": "Legal Counsel",
+          "department": "Operations",
+          "location": "Paris (Hybrid)",
+          "type": "Full-time",
+          "description": "You'll handle commercial contracts with hotel partners, support compliance across GDPR and consumer protection frameworks, and advise the business on legal matters as we grow.",
+          "requirements": [
+            "Qualified lawyer with 3+ years of commercial experience",
+            "Knowledge of French and EU contract and data protection law",
+            "Experience in tech, travel, or hospitality sectors",
+            "Bilingual English and French required"
+          ]
+        },
+        {
+          "id": "finance-manager",
+          "title": "Finance Manager",
+          "department": "Operations",
+          "location": "Paris (Hybrid)",
+          "type": "Full-time",
+          "description": "You'll manage the company's financial operations — from monthly reporting and budgeting to payments processing and audit readiness — as we scale across new markets.",
+          "requirements": [
+            "ACA, ACCA, or equivalent qualification",
+            "Experience in a high-growth tech or travel company",
+            "Proficiency with accounting software and financial modelling",
+            "Comfortable working in French and English"
+          ]
+        }
+      ]
+    },
+    "help": {
+      "heroBadge": "Help Center",
+      "heroTitle": "How Can We Help?",
+      "heroSubtitle": "Search our knowledge base or browse by topic below.",
+      "searchPlaceholder": "Search for answers…",
+      "articlesCount": "{{count}} articles",
+      "resultsFor": "{{count}} results for",
+      "noResults": "No articles match your search.",
+      "clearFilters": "Clear filters",
+      "stillNeedHelp": "Still Need Help?",
+      "contactSupport": "Contact Our Support Team",
+      "supportLead": "Our team of hospitality specialists is available around the clock to assist you.",
+      "liveChat": "Live Chat",
+      "liveChatText": "Chat with a support specialist in real time. Fastest response for urgent queries.",
+      "availableNow": "Available now",
+      "startChat": "Start Chat",
+      "emailSupport": "Email Support",
+      "emailSupportText": "Send us a detailed message and we'll get back to you with a thorough response.",
+      "emailReply": "Typically within 4 hours",
+      "sendEmail": "Send Email",
+      "phoneSupport": "Phone Support",
+      "phoneSupportText": "Speak directly with a specialist for complex bookings or urgent travel issues.",
+      "phoneHours": "Mon – Sun, 08:00–22:00 CET",
+      "popularTopics": "Popular Topics",
+      "categories": [
+        {
+          "key": "All",
+          "label": "All"
+        },
+        {
+          "key": "Booking",
+          "label": "Booking"
+        },
+        {
+          "key": "Payments",
+          "label": "Payments"
+        },
+        {
+          "key": "Cancellations",
+          "label": "Cancellations"
+        },
+        {
+          "key": "Reviews",
+          "label": "Reviews"
+        },
+        {
+          "key": "Account",
+          "label": "Account"
+        }
+      ],
+      "faqs": [
+        {
+          "category": "Booking",
+          "categoryKey": "Booking",
+          "question": "How do I make a reservation?",
+          "answer": "Browse our hotel collection, choose your dates and room type, then click 'Book Now'. You'll be guided through a simple checkout — enter your details, select any extras, and confirm your booking. You'll receive an instant confirmation email."
+        },
+        {
+          "category": "Booking",
+          "categoryKey": "Booking",
+          "question": "Can I book for someone else?",
+          "answer": "Yes. During checkout, enter the guest's name in the 'Primary Guest' field. The booking confirmation will be sent to your email address, and you can forward it to the guest. Please ensure the name matches their government-issued ID."
+        },
+        {
+          "category": "Booking",
+          "categoryKey": "Booking",
+          "question": "How far in advance can I book?",
+          "answer": "Most hotels on Selora allow bookings up to 12 months in advance. Some exclusive properties offer up to 18 months. For popular dates (Christmas, New Year, major events), we strongly recommend booking as early as possible."
+        },
+        {
+          "category": "Payments",
+          "categoryKey": "Payments",
+          "question": "What payment methods do you accept?",
+          "answer": "We accept all major credit and debit cards (Visa, Mastercard, American Express), as well as Apple Pay and Google Pay. All transactions are secured with 256-bit SSL encryption. We do not store full card details on our servers."
+        },
+        {
+          "category": "Payments",
+          "categoryKey": "Payments",
+          "question": "When will I be charged?",
+          "answer": "This depends on the rate you choose. 'Pay Now' rates are charged immediately and are usually cheaper. 'Pay Later' rates are charged 48 hours before check-in. Fully flexible rates may be charged at check-in by the hotel directly."
+        },
+        {
+          "category": "Payments",
+          "categoryKey": "Payments",
+          "question": "Is my payment secure?",
+          "answer": "Absolutely. Selora is PCI-DSS compliant and all payments are processed through our certified payment partner. Your card details are encrypted end-to-end. We are also 3D Secure enabled for an extra layer of protection."
+        },
+        {
+          "category": "Cancellations",
+          "categoryKey": "Cancellations",
+          "question": "What is the cancellation policy?",
+          "answer": "Cancellation policies vary by hotel and rate type. The policy applicable to your booking is clearly shown before you confirm. Flexible rates allow free cancellation up to 48 hours before check-in. Non-refundable rates cannot be cancelled or modified."
+        },
+        {
+          "category": "Cancellations",
+          "categoryKey": "Cancellations",
+          "question": "How do I cancel my booking?",
+          "answer": "Go to Profile → My Bookings, find the reservation and click 'Cancel Booking'. If the cancellation is within the free window, your refund will be processed within 5–10 business days. If outside the window, the cancellation fee will apply as stated in your booking."
+        },
+        {
+          "category": "Cancellations",
+          "categoryKey": "Cancellations",
+          "question": "Can I modify my booking dates?",
+          "answer": "Date modifications are subject to availability and the rate conditions. For flexible rates, you can modify dates free of charge. Go to Profile → My Bookings → Modify. For non-flexible rates, contact our support team who will advise on options."
+        },
+        {
+          "category": "Account",
+          "categoryKey": "Account",
+          "question": "How do I reset my password?",
+          "answer": "On the login page, click 'Forgot password?'. Enter your email address and we'll send you a secure reset link valid for 1 hour. If you don't receive the email, check your spam folder or contact our support team."
+        },
+        {
+          "category": "Account",
+          "categoryKey": "Account",
+          "question": "How do I add a hotel to Favourites?",
+          "answer": "Click the heart icon on any hotel card or hotel detail page. Your favourites are saved to your account and accessible from the Favourites page. You must be logged in to save favourites."
+        },
+        {
+          "category": "Reviews",
+          "categoryKey": "Reviews",
+          "question": "How do I leave a review?",
+          "answer": "After your stay, you'll receive an email invitation to leave a review. You can also go to Profile → My Bookings and click 'Leave a Review' on completed stays. Reviews must be submitted within 30 days of check-out."
+        },
+        {
+          "category": "Reviews",
+          "categoryKey": "Reviews",
+          "question": "Can I edit or delete my review?",
+          "answer": "You can edit your review within 72 hours of submission by going to Profile → My Reviews. After 72 hours, reviews are locked to ensure authenticity. To report a problem with a review, contact our support team."
+        },
+        {
+          "category": "Account",
+          "categoryKey": "Account",
+          "question": "How does Selora verify its hotels?",
+          "answer": "Every hotel undergoes a rigorous multi-step vetting process: desktop research, guest feedback analysis, and an on-site inspection by our curation team. We reject over 80% of applicants. Hotels are re-evaluated annually."
+        },
+        {
+          "category": "Booking",
+          "categoryKey": "Booking",
+          "question": "Can I request a specific room type or floor?",
+          "answer": "Yes. During checkout, use the special requests field to note your preferences — high floor, garden view, connecting rooms, etc. While we cannot guarantee requests, our hotel partners do their best to accommodate them, especially for guests who book early."
+        },
+        {
+          "category": "Booking",
+          "categoryKey": "Booking",
+          "question": "What happens if my chosen hotel is fully booked?",
+          "answer": "If a hotel is fully booked for your selected dates, you will not be able to proceed with booking — the calendar will show no availability. We recommend adding the property to your Favourites and checking back, or contacting our concierge team who may have access to waitlist options."
+        },
+        {
+          "category": "Payments",
+          "categoryKey": "Payments",
+          "question": "Can I split the payment across multiple cards?",
+          "answer": "Currently, Selora supports one payment method per booking. If you need to arrange split billing (for example for corporate bookings), please contact our support team before completing the reservation and we will assist you manually."
+        },
+        {
+          "category": "Cancellations",
+          "categoryKey": "Cancellations",
+          "question": "What is a non-refundable rate and should I choose it?",
+          "answer": "Non-refundable rates are typically 10–20% cheaper than flexible rates, but you forfeit the full amount if you cancel for any reason. We recommend them only when your plans are certain and you have comprehensive travel insurance. Always read the specific terms before confirming."
+        },
+        {
+          "category": "Reviews",
+          "categoryKey": "Reviews",
+          "question": "Are all reviews on Selora verified?",
+          "answer": "Yes. We only accept reviews from guests who have completed a stay booked through Selora. Each review is cross-referenced with booking records before publication. We also screen all submissions for policy compliance. This means every review you read represents a real, verified experience."
+        },
+        {
+          "category": "Account",
+          "categoryKey": "Account",
+          "question": "How do I update my personal details or contact information?",
+          "answer": "Log in to your Selora account and go to Profile → Settings. You can update your name, email address, phone number, and password at any time. Changes to your email address will require re-verification via a confirmation link sent to the new address."
+        }
+      ],
+      "topics": [
+        "How to cancel a booking",
+        "Payment not going through",
+        "How to get a room upgrade",
+        "Changing my check-in date",
+        "Downloading my invoice",
+        "Setting up favourites",
+        "Leaving a review after checkout",
+        "Forgotten password",
+        "Booking for a corporate trip"
+      ]
+    },
+    "contact": {
+      "heroBadge": "Get in Touch",
+      "heroTitle": "Contact Us",
+      "heroSubtitle": "We'd love to hear from you. Our team is here to help with anything you need.",
+      "liveChat": "Live Chat",
+      "availableNow": "Available now",
+      "liveChatDesc": "Instant help from a specialist.",
+      "startChat": "Start Chat",
+      "email": "Email",
+      "emailReply": "Reply within 4 hours",
+      "emailDesc": "selorabooking@gmail.com",
+      "sendEmail": "Send Email",
+      "phone": "Phone",
+      "phoneHours": "08:00 – 22:00 CET",
+      "phoneNumber": "+33 1 23 45 67 89",
+      "callNow": "Call Now",
+      "formEyebrow": "Write to Us",
+      "formTitle": "Send Us a Message",
+      "formIntro": "Fill in the form and our team will get back to you within a few hours. For urgent booking matters, we recommend calling or using live chat.",
+      "responseTime": "Response Time",
+      "responseTimeText": "General enquiries: within 4 hours\nUrgent bookings: within 1 hour",
+      "languages": "Languages",
+      "languagesText": "English, French, Spanish, Italian, German, Japanese",
+      "beforeYouWrite": "Before You Write",
+      "beforeYouWriteText": "Check our",
+      "beforeYouWriteText2": "— most answers are already there.",
+      "helpCenter": "Help Center",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Isabelle Fontaine",
+      "emailAddress": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "topic": "Topic",
+      "selectTopic": "Select a topic…",
+      "bookingRef": "Booking Reference",
+      "optional": "(optional)",
+      "bookingRefPlaceholder": "e.g. SL-2026-00412",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help…",
+      "requiredHint": "Fields marked",
+      "requiredHintEnd": "are required.",
+      "sending": "Sending…",
+      "sendMessage": "Send Message",
+      "messageSent": "Message Sent!",
+      "thankYou": "Thank you,",
+      "receivedAndReply": "We've received your message and will reply to",
+      "withinHours": "within 4 hours.",
+      "sendAnother": "Send Another Message",
+      "officesEyebrow": "Our Offices",
+      "officesTitle": "Find Us Around the World",
+      "regionalOffice": "Regional Office",
+      "topics": [
+        "Booking enquiry",
+        "Payment issue",
+        "Cancellation request",
+        "Existing reservation",
+        "Room upgrade request",
+        "Corporate / group booking",
+        "Partnership enquiry",
+        "Press & media",
+        "Technical issue",
+        "Other"
+      ],
+      "offices": [
+        {
+          "city": "Paris",
+          "flag": "🇫🇷",
+          "address": "14 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+          "phone": "+33 1 23 45 67 89",
+          "email": "selorabooking@gmail.com",
+          "hours": "Mon – Fri, 09:00 – 18:00 CET"
+        },
+        {
+          "city": "London",
+          "flag": "🇬🇧",
+          "address": "42 Berkeley Square, Mayfair, London W1J 5AW, UK",
+          "phone": "+44 20 7946 0123",
+          "email": "selorabooking@gmail.com",
+          "hours": "Mon – Fri, 09:00 – 18:00 GMT"
+        },
+        {
+          "city": "New York",
+          "flag": "🇺🇸",
+          "address": "350 Fifth Avenue, Suite 4100, New York, NY 10118, USA",
+          "phone": "+1 212 555 0147",
+          "email": "selorabooking@gmail.com",
+          "hours": "Mon – Fri, 09:00 – 18:00 EST"
+        }
+      ]
+    },
+    "cancellation": {
+      "heroBadge": "Transparent & Fair",
+      "heroTitle": "Cancellation Policy",
+      "heroSubtitle": "We believe in clarity and fairness. Here's exactly what to expect when plans change.",
+      "policyTypesEyebrow": "Policy Types",
+      "policyTypesTitle": "Cancellation Rates Explained",
+      "policyTypesSubtitle": "Each hotel sets its own cancellation terms. The applicable policy is always shown clearly before you confirm your booking.",
+      "timelineEyebrow": "At a Glance",
+      "timelineTitle": "Refund Timeline",
+      "timelineSubtitle": "A quick reference to understand what you'll receive depending on when you cancel.",
+      "windowHeader": "Cancellation Window",
+      "refundHeader": "Refund",
+      "feeHeader": "Fee",
+      "timelineFootnote": "* The exact policy for each booking is always displayed on the hotel page and in your booking confirmation. Hotel-specific terms may override the above.",
+      "howEyebrow": "Step by Step",
+      "howTitle": "How to Cancel a Booking",
+      "faqEyebrow": "Questions & Answers",
+      "faqTitle": "Frequently Asked",
+      "faqSubtitle": "Everything you need to know about cancelling or modifying a booking.",
+      "stillHaveQuestions": "Still have questions?",
+      "contactSupport": "Contact Our Support Team",
+      "ctaTitle": "Book with Confidence",
+      "ctaSubtitle": "Every Selora booking comes with transparent terms and dedicated support. Your peace of mind is our priority.",
+      "exploreHotels": "Explore Hotels",
+      "talkToUs": "Talk to Us",
+      "stats": [
+        {
+          "value": "Free",
+          "label": "Cancel 48h+ before"
+        },
+        {
+          "value": "5–10",
+          "label": "Business days refund"
+        },
+        {
+          "value": "100%",
+          "label": "Refund when eligible"
+        },
+        {
+          "value": "24/7",
+          "label": "Support available"
+        }
+      ],
+      "policies": [
+        {
+          "title": "Free Cancellation",
+          "subtitle": "Cancel up to 48 hours before check-in",
+          "description": "For most bookings, you may cancel free of charge up to 48 hours before your scheduled check-in date. A full refund will be issued to your original payment method within 5–10 business days.",
+          "tags": [
+            "Full Refund",
+            "No Fees",
+            "Most Hotels"
+          ]
+        },
+        {
+          "title": "Partial Refund",
+          "subtitle": "Cancellations within 24–48 hours of check-in",
+          "description": "If you cancel between 24 and 48 hours before check-in, a cancellation fee equivalent to one night's stay will be charged. The remaining balance will be refunded within 5–10 business days.",
+          "tags": [
+            "1 Night Fee",
+            "Partial Refund",
+            "Some Hotels"
+          ]
+        },
+        {
+          "title": "Non-Refundable",
+          "subtitle": "Cancellations less than 24 hours or non-arrival",
+          "description": "Bookings cancelled within 24 hours of check-in or in the event of non-arrival are non-refundable. The full booking amount will be charged. We recommend travel insurance to cover unforeseen circumstances.",
+          "tags": [
+            "No Refund",
+            "No-Show Included",
+            "Strict Rate"
+          ]
+        }
+      ],
+      "timeline": [
+        {
+          "window": "More than 48 hours",
+          "label": "before check-in",
+          "refund": "100% refund",
+          "fee": "No fee",
+          "status": "green"
+        },
+        {
+          "window": "24 – 48 hours",
+          "label": "before check-in",
+          "refund": "Partial refund",
+          "fee": "1 night charged",
+          "status": "amber"
+        },
+        {
+          "window": "Less than 24 hours",
+          "label": "before check-in",
+          "refund": "No refund",
+          "fee": "Full charge",
+          "status": "red"
+        },
+        {
+          "window": "No-show",
+          "label": "on check-in day",
+          "refund": "No refund",
+          "fee": "Full charge",
+          "status": "red"
+        }
+      ],
+      "steps": [
+        {
+          "step": "01",
+          "title": "Go to My Bookings",
+          "description": "Log in to your Selora account and navigate to 'My Bookings' in your profile menu."
+        },
+        {
+          "step": "02",
+          "title": "Select the Reservation",
+          "description": "Find the booking you wish to cancel and click on it to open the booking details."
+        },
+        {
+          "step": "03",
+          "title": "Request Cancellation",
+          "description": "Click 'Cancel Booking' and review the applicable cancellation terms before confirming."
+        },
+        {
+          "step": "04",
+          "title": "Receive Your Refund",
+          "description": "Once confirmed, your refund (if applicable) will be returned to your original payment method."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How do I cancel my booking?",
+          "answer": "You can cancel any booking directly from your account under 'My Bookings'. Select the reservation you wish to cancel and follow the on-screen instructions. You'll receive a confirmation email once the cancellation is processed."
+        },
+        {
+          "question": "When will I receive my refund?",
+          "answer": "Refunds are processed within 3–5 business days of cancellation confirmation. Depending on your bank or card provider, it may take an additional 5–10 business days for the funds to appear in your account."
+        },
+        {
+          "question": "What if the hotel cancels my booking?",
+          "answer": "If a hotel cancels your confirmed booking, you are entitled to a full refund regardless of the cancellation policy. We will also assist you in finding a comparable alternative at no extra cost."
+        },
+        {
+          "question": "Can I modify my booking instead of cancelling?",
+          "answer": "Yes. Many hotels allow free date changes subject to availability. Go to 'My Bookings', select your reservation, and choose 'Modify Dates'. If the new dates have a different rate, you'll be charged or refunded the difference."
+        },
+        {
+          "question": "Does travel insurance cover cancellation fees?",
+          "answer": "This depends on your insurance provider and policy terms. We strongly recommend purchasing comprehensive travel insurance that includes trip cancellation cover, especially for non-refundable bookings."
+        },
+        {
+          "question": "Are group or corporate bookings treated differently?",
+          "answer": "Group bookings (5+ rooms) and corporate accounts may have bespoke cancellation terms agreed at the time of booking. Please refer to your booking confirmation or contact our corporate team for details."
+        },
+        {
+          "question": "Will I lose my booking confirmation if I cancel?",
+          "answer": "Your cancellation confirmation will be sent via email immediately after processing. We recommend keeping both your original booking confirmation and your cancellation confirmation for your records, especially if a refund is due."
+        },
+        {
+          "question": "Can I cancel on behalf of someone else?",
+          "answer": "If you made a booking on behalf of another guest, you can cancel it from your account under 'My Bookings'. The cancellation and any refund will be processed to the original payment method used at the time of booking."
+        },
+        {
+          "question": "What happens if I arrive late and miss my check-in?",
+          "answer": "Late arrivals are different from no-shows and are handled at the hotel's discretion. Always inform the hotel and Selora's support team in advance if you expect to arrive outside the stated check-in window. Many hotels hold reservations overnight for guests who have communicated their delay."
+        },
+        {
+          "question": "Is the cancellation policy the same for every hotel on Selora?",
+          "answer": "No — cancellation terms vary by hotel and by rate type. Each hotel sets its own policy, and the specific terms are displayed clearly on the hotel page and during checkout. Always review the applicable policy before confirming your booking."
+        }
+      ]
+    },
+    "safety": {
+      "heroBadge": "Your Safety, Our Priority",
+      "heroTitle": "Safety at Selora",
+      "heroSubtitle": "We go above and beyond to make sure every booking, every stay, and every interaction on our platform is safe and secure.",
+      "commitmentsEyebrow": "How We Protect You",
+      "commitmentsTitle": "Our Safety Commitments",
+      "commitmentsSubtitle": "From secure payments to verified properties, we've built multiple layers of protection into every part of the Selora experience.",
+      "certifiedEyebrow": "Certified & Compliant",
+      "certifiedTitle": "Security Standards We Uphold",
+      "tipsEyebrow": "Stay Smart",
+      "tipsTitle": "Tips for a Safe and Secure Trip",
+      "tipsLead": "While we do everything we can to protect you on our platform, these simple habits will help keep your travels safe from booking to check-out.",
+      "phishingTitle": "Phishing Warning",
+      "phishingText": "Selora will never ask for your password, card details, or OTP via email, SMS, or phone. If you receive such a request, it is fraudulent — do not respond and report it to us immediately.",
+      "emergencyTitle": "Emergency & Safety Hotline",
+      "emergencyText": "If you experience an emergency during your stay, always contact local emergency services first. Our dedicated safety team is also available around the clock to assist you.",
+      "emergencyPhone": "+33 1 23 45 67 89 (24/7)",
+      "emergencyEmail": "selorabooking@gmail.com",
+      "contactSupport": "Contact Support",
+      "faqEyebrow": "Common Questions",
+      "faqTitle": "Safety FAQs",
+      "faqSubtitle": "Answers to the most frequently asked questions about safety and security at Selora.",
+      "ctaTitle": "Travel with Complete Confidence",
+      "ctaSubtitle": "Every Selora property is verified, every payment is encrypted, and our team is always on hand. Book knowing we've got your back.",
+      "exploreHotels": "Explore Hotels",
+      "talkToUs": "Talk to Us",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Verified hotels"
+        },
+        {
+          "value": "256-bit",
+          "label": "SSL encryption"
+        },
+        {
+          "value": "4.8★",
+          "label": "Guest trust score"
+        },
+        {
+          "value": "24/7",
+          "label": "Safety support"
+        }
+      ],
+      "commitments": [
+        {
+          "title": "Verified Properties Only",
+          "description": "Every hotel in our collection is personally inspected and verified by our curation team before listing. We reject properties that don't meet our strict safety and quality standards."
+        },
+        {
+          "title": "Secure Payments",
+          "description": "All transactions are encrypted using industry-standard TLS and processed through PCI-DSS compliant payment providers. Your card details are never stored on our servers."
+        },
+        {
+          "title": "Identity Verification",
+          "description": "Our hotel partners follow KYC and guest identification procedures at check-in, ensuring a safe environment for all guests staying at our properties."
+        },
+        {
+          "title": "Transparent Reviews",
+          "description": "All guest reviews on Selora are verified as genuine post-stay submissions. We do not allow incentivised or anonymous reviews, so you can trust what you read."
+        },
+        {
+          "title": "Data Privacy",
+          "description": "We comply fully with GDPR and international data privacy regulations. Your personal data is never sold to third parties and you can request deletion at any time."
+        },
+        {
+          "title": "Global Safety Standards",
+          "description": "We work only with hotels that comply with local fire safety, health, and accessibility regulations. Our partnerships include properties certified by national tourism authorities."
+        }
+      ],
+      "certifications": [
+        {
+          "label": "PCI-DSS Level 1",
+          "detail": "Payment security"
+        },
+        {
+          "label": "GDPR Compliant",
+          "detail": "EU data protection"
+        },
+        {
+          "label": "SSL / TLS Encrypted",
+          "detail": "256-bit encryption"
+        },
+        {
+          "label": "ISO 27001",
+          "detail": "Information security"
+        }
+      ],
+      "guestTips": [
+        {
+          "title": "Check the cancellation policy",
+          "description": "Always review the refund terms before confirming your booking — policies vary by property."
+        },
+        {
+          "title": "Keep your confirmation email",
+          "description": "Save your booking confirmation as proof of reservation. It contains all essential check-in details."
+        },
+        {
+          "title": "Use secure networks",
+          "description": "Avoid making bookings over public Wi-Fi. Always use a trusted, password-protected connection."
+        },
+        {
+          "title": "Share your itinerary",
+          "description": "Let a trusted person know your travel plans, hotel address, and check-in dates when travelling alone."
+        },
+        {
+          "title": "Report suspicious activity",
+          "description": "If you notice anything unusual about your booking confirmation or our website, contact us immediately."
+        },
+        {
+          "title": "Travel insurance",
+          "description": "We strongly recommend comprehensive travel insurance covering medical emergencies, trip cancellation, and lost luggage."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How do I know a hotel listing is legitimate?",
+          "answer": "Every property listed on Selora is manually verified by our curation team. We conduct on-site inspections, check official registrations, and review licences before any hotel is approved. You'll also see verified guest reviews and a Selora quality badge on all listings."
+        },
+        {
+          "question": "Is my payment information safe?",
+          "answer": "Yes. All payments are processed through PCI-DSS Level 1 certified providers. We use TLS 1.3 encryption for all data in transit, and your card number is never stored on our servers. You'll also see the secure padlock icon in your browser address bar during checkout."
+        },
+        {
+          "question": "What should I do if I suspect fraud?",
+          "answer": "If you receive an unsolicited email, call, or message claiming to be from Selora and asking for payment or personal details, do not respond. Contact our support team immediately via the Contact Us page or by calling our fraud hotline: +33 1 23 45 67 89."
+        },
+        {
+          "question": "How are guest reviews moderated?",
+          "answer": "Reviews are only accepted from guests who have completed a stay booked through Selora. Each review is screened by our trust and safety team before publication. We have a zero-tolerance policy for fake or manipulated reviews."
+        },
+        {
+          "question": "What accessibility standards do your hotels meet?",
+          "answer": "We include accessibility information on every hotel page. Properties that meet international accessibility standards — including wheelchair access, adapted rooms, and assistive services — are clearly marked. Contact our team if you have specific accessibility requirements."
+        },
+        {
+          "question": "How can I report a safety concern at a property?",
+          "answer": "If you experience a safety issue at one of our partner hotels during your stay, contact our 24/7 guest support line immediately. For emergencies, always call local emergency services first. We take all safety reports extremely seriously and will investigate promptly."
+        },
+        {
+          "question": "What should I do if my personal belongings are lost or stolen at a hotel?",
+          "answer": "Immediately report the incident to the hotel management and, where theft is suspected, to local police. Contact Selora's support team to assist with communication with the hotel and advise on next steps with your travel insurer. We cannot be held responsible for items lost or stolen at partner properties but will advocate on your behalf."
+        },
+        {
+          "question": "Does Selora share my travel details with third parties for safety purposes?",
+          "answer": "We only share the information necessary to complete your booking — your name, contact details, and stay dates are shared with the hotel you book. We do not share your data with third parties for surveillance or law enforcement purposes unless legally required to do so. Full details are in our Privacy Policy."
+        }
+      ]
+    },
+    "privacy": {
+      "heroBadge": "Your Data, Your Rights",
+      "heroTitle": "Privacy Policy",
+      "lastUpdated": "Last updated: 1 April 2026",
+      "introEyebrow": "Our Commitment",
+      "introTitle": "We take your privacy seriously",
+      "introP1": "This Privacy Policy explains what personal data Selora collects, how we use it, who we share it with, and what rights you have over your information.",
+      "introP2": "By using Selora, you agree to the practices described in this policy. If you have any questions, our privacy team is always available at",
+      "contents": "Contents",
+      "governingLawTitle": "Governing Law.",
+      "governingLawText": "This Privacy Policy is governed by the laws of France. Selora SAS, 14 Rue du Faubourg Saint-Honoré, 75008 Paris, France, is the data controller responsible for your personal information. Our EU Data Protection Officer can be reached at",
+      "exerciseRightsTitle": "Exercise Your Rights",
+      "exerciseRightsText": "To access, correct, export, or delete your personal data — or to withdraw consent — contact our privacy team. We'll respond within 30 days.",
+      "emailLabel": "Email:",
+      "dpoLabel": "DPO:",
+      "contactPrivacy": "Contact Privacy Team",
+      "viewSafety": "View Safety Page",
+      "ctaTitle": "Book with Confidence",
+      "ctaSubtitle": "Your privacy matters to us. Explore our curated collection of luxury hotels knowing your data is safe and your rights are always respected.",
+      "exploreHotels": "Explore Hotels",
+      "askQuestion": "Ask a Question",
+      "highlights": [
+        {
+          "label": "No data sold",
+          "description": "Your data is never sold to third parties"
+        },
+        {
+          "label": "Right to delete",
+          "description": "Request account deletion at any time"
+        },
+        {
+          "label": "GDPR compliant",
+          "description": "Full EU data protection compliance"
+        },
+        {
+          "label": "Opt-out anytime",
+          "description": "Unsubscribe from marketing in one click"
+        }
+      ],
+      "sections": [
+        {
+          "id": "information-we-collect",
+          "title": "1. Information We Collect",
+          "content": [
+            {
+              "subtitle": "Information you provide directly",
+              "text": "When you create an account, make a booking, or contact us, we collect: your full name, email address, phone number, billing and payment information, travel preferences, and any messages you send us."
+            },
+            {
+              "subtitle": "Information collected automatically",
+              "text": "When you use our platform, we automatically collect: IP address, browser type and version, pages visited, time spent on pages, referring URLs, device identifiers, and approximate location based on IP. This helps us improve our service and detect fraud."
+            },
+            {
+              "subtitle": "Information from third parties",
+              "text": "If you sign in via a third-party service (such as Google), we receive your name and email address from that provider. We may also receive information from hotels and payment processors to complete your bookings."
+            }
+          ]
+        },
+        {
+          "id": "how-we-use",
+          "title": "2. How We Use Your Information",
+          "content": [
+            {
+              "subtitle": "To provide and improve our services",
+              "text": "We use your information to process bookings, send confirmation emails, manage your account, handle cancellations and refunds, personalise your experience, and improve our platform based on usage data."
+            },
+            {
+              "subtitle": "To communicate with you",
+              "text": "We may send you booking confirmations, receipts, service updates, and — with your consent — promotional offers and travel recommendations. You can opt out of marketing emails at any time."
+            },
+            {
+              "subtitle": "For security and fraud prevention",
+              "text": "We use your data to detect and prevent fraudulent transactions, verify your identity, enforce our Terms of Service, and comply with legal obligations."
+            }
+          ]
+        },
+        {
+          "id": "sharing",
+          "title": "3. Sharing Your Information",
+          "content": [
+            {
+              "subtitle": "With hotel partners",
+              "text": "We share your name, contact details, and booking information with the hotel at which you've made a reservation. This is necessary to fulfil your booking."
+            },
+            {
+              "subtitle": "With service providers",
+              "text": "We work with trusted third-party providers for payment processing, email delivery, data analytics, and customer support. These providers are contractually obligated to keep your data confidential and may only use it to provide services to us."
+            },
+            {
+              "subtitle": "We never sell your data",
+              "text": "Selora does not sell, rent, or trade your personal information to any third party for their own marketing or commercial purposes. Period."
+            }
+          ]
+        },
+        {
+          "id": "cookies",
+          "title": "4. Cookies & Tracking",
+          "content": [
+            {
+              "subtitle": "What cookies we use",
+              "text": "We use essential cookies (required for the platform to function), analytics cookies (to understand how visitors use our site), and preference cookies (to remember your settings like language and theme). We do not use third-party advertising cookies."
+            },
+            {
+              "subtitle": "Managing cookies",
+              "text": "You can control cookies through your browser settings. Disabling certain cookies may affect the functionality of our platform. You can also manage your preferences via our Cookie Settings panel accessible from the footer."
+            }
+          ]
+        },
+        {
+          "id": "data-retention",
+          "title": "5. Data Retention",
+          "content": [
+            {
+              "subtitle": "How long we keep your data",
+              "text": "We retain your account information for as long as your account is active. Booking records are kept for 7 years to comply with financial and legal obligations. Analytics data is retained for a maximum of 26 months in anonymised form."
+            },
+            {
+              "subtitle": "Deletion on request",
+              "text": "If you close your account, we will delete your personal data within 30 days, except where we are legally required to retain it (e.g. for tax or fraud prevention purposes)."
+            }
+          ]
+        },
+        {
+          "id": "your-rights",
+          "title": "6. Your Rights",
+          "content": [
+            {
+              "subtitle": "Rights under GDPR and applicable law",
+              "text": "Depending on your location, you may have the right to: access the personal data we hold about you; correct inaccurate data; request deletion of your data; restrict or object to processing; receive a portable copy of your data; and withdraw consent at any time."
+            },
+            {
+              "subtitle": "How to exercise your rights",
+              "text": "To make a data request, email us at selorabooking@gmail.com or use the form in your account settings under 'Privacy & Data'. We will respond within 30 days. You also have the right to lodge a complaint with your national data protection authority."
+            }
+          ]
+        },
+        {
+          "id": "security",
+          "title": "7. Security",
+          "content": [
+            {
+              "subtitle": "How we protect your data",
+              "text": "We use industry-standard security measures including TLS 1.3 encryption for data in transit, AES-256 encryption for data at rest, regular security audits, and strict access controls. Our payment processing is PCI-DSS Level 1 certified."
+            },
+            {
+              "subtitle": "Data breach notification",
+              "text": "In the unlikely event of a data breach affecting your personal information, we will notify you and the relevant supervisory authority within 72 hours of becoming aware, in accordance with GDPR requirements."
+            }
+          ]
+        },
+        {
+          "id": "international",
+          "title": "8. International Transfers",
+          "content": [
+            {
+              "subtitle": "Transfers outside the EEA",
+              "text": "Some of our service providers are based outside the European Economic Area. When we transfer data internationally, we use approved safeguards such as Standard Contractual Clauses (SCCs) to ensure your data receives an equivalent level of protection."
+            }
+          ]
+        },
+        {
+          "id": "children",
+          "title": "9. Children's Privacy",
+          "content": [
+            {
+              "subtitle": "Age restriction",
+              "text": "Selora is not intended for use by individuals under the age of 18. We do not knowingly collect personal data from children. If we become aware that a child has provided us with personal information, we will delete it promptly."
+            }
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "10. Changes to This Policy",
+          "content": [
+            {
+              "subtitle": "How we notify you",
+              "text": "We may update this Privacy Policy from time to time. When we make material changes, we will notify you by email and display a notice on our platform at least 14 days before the changes take effect. Your continued use of Selora after the effective date constitutes acceptance."
+            }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "heroBadge": "Clear & Fair",
+      "heroTitle": "Terms of Service",
+      "lastUpdated": "Last updated: 1 April 2026",
+      "introEyebrow": "Before You Begin",
+      "introTitle": "Your agreement with Selora",
+      "introP1": "These Terms of Service govern your use of the Selora platform and all bookings made through it. Please read them carefully — they explain your rights and responsibilities as a guest.",
+      "introP2": "If you have any questions about these Terms, our legal team is available at",
+      "introP2End": ". We are always happy to clarify.",
+      "contents": "Contents",
+      "legalEntityTitle": "Legal Entity.",
+      "legalEntityText": "Selora SAS is a company registered in France (SIREN 123 456 789), with its registered office at 14 Rue du Faubourg Saint-Honoré, 75008 Paris, France. For legal correspondence, contact us at",
+      "legalEntityText2": "or by post at the address above.",
+      "relatedEyebrow": "Also Read",
+      "relatedTitle": "Related Policies",
+      "ctaTitle": "Ready to Explore?",
+      "ctaSubtitle": "Now that you know the terms, discover our curated collection of 220 hotels across 11 cities.",
+      "exploreHotels": "Explore Hotels",
+      "askQuestion": "Ask a Question",
+      "highlights": [
+        {
+          "label": "Fair & transparent",
+          "description": "Clear terms with no hidden obligations"
+        },
+        {
+          "label": "Secure bookings",
+          "description": "Your reservations are fully protected"
+        },
+        {
+          "label": "Governed by French law",
+          "description": "Paris courts have jurisdiction"
+        },
+        {
+          "label": "30-day notice",
+          "description": "We notify you before material changes"
+        }
+      ],
+      "related": [
+        {
+          "id": "privacy",
+          "href": "/privacy-policy",
+          "title": "Privacy Policy",
+          "description": "How we collect, use, and protect your personal data."
+        },
+        {
+          "id": "cancel",
+          "href": "/cancellation-policy",
+          "title": "Cancellation Policy",
+          "description": "Refund timelines and cancellation procedures explained."
+        },
+        {
+          "id": "safety",
+          "href": "/safety",
+          "title": "Safety",
+          "description": "Our commitments to keeping your bookings secure."
+        }
+      ],
+      "sections": [
+        {
+          "id": "acceptance",
+          "title": "1. Acceptance of Terms",
+          "content": [
+            {
+              "subtitle": "Agreement to these Terms",
+              "text": "By accessing or using Selora (the \"Platform\"), including browsing hotels, creating an account, or making a booking, you agree to be bound by these Terms of Service (\"Terms\") and our Privacy Policy. If you do not agree, please do not use the Platform."
+            },
+            {
+              "subtitle": "Eligibility",
+              "text": "You must be at least 18 years of age to use Selora and to enter into a binding contract. By using the Platform, you represent and warrant that you meet this requirement. Users who make bookings on behalf of others accept these Terms on behalf of all travellers in the reservation."
+            },
+            {
+              "subtitle": "Changes to these Terms",
+              "text": "We may update these Terms from time to time. We will notify you of material changes by email and by posting a notice on the Platform at least 30 days before changes take effect. Your continued use of Selora after the effective date constitutes your acceptance of the revised Terms."
+            }
+          ]
+        },
+        {
+          "id": "platform",
+          "title": "2. The Selora Platform",
+          "content": [
+            {
+              "subtitle": "What Selora provides",
+              "text": "Selora is an online travel platform that connects travellers with independent and luxury hotel partners. We facilitate hotel discovery, booking, and payment, but we are not a hotel operator, travel agent, or insurer. Each booking is a direct contract between you and the hotel."
+            },
+            {
+              "subtitle": "Platform availability",
+              "text": "We aim to keep the Platform available 24 hours a day, 7 days a week. However, we do not guarantee uninterrupted access and may suspend the Platform for maintenance, upgrades, or circumstances beyond our control. We are not liable for losses arising from Platform downtime."
+            },
+            {
+              "subtitle": "Third-party content",
+              "text": "Hotel descriptions, photos, amenity lists, and reviews are provided by our hotel partners and verified guests. While we take care to ensure accuracy, Selora is not responsible for errors or omissions in third-party content."
+            }
+          ]
+        },
+        {
+          "id": "accounts",
+          "title": "3. Your Account",
+          "content": [
+            {
+              "subtitle": "Registration",
+              "text": "To make a booking, you must create a Selora account. You agree to provide accurate, current, and complete information and to keep your account details up to date. You are responsible for all activity that occurs under your account."
+            },
+            {
+              "subtitle": "Account security",
+              "text": "You are responsible for maintaining the confidentiality of your password. You must notify us immediately at security@selora.com if you suspect unauthorised access to your account. We are not liable for losses resulting from unauthorised use of your account."
+            },
+            {
+              "subtitle": "Account termination",
+              "text": "You may close your account at any time from your account settings. We reserve the right to suspend or terminate accounts that breach these Terms, engage in fraudulent activity, or cause harm to other users or our hotel partners."
+            }
+          ]
+        },
+        {
+          "id": "bookings",
+          "title": "4. Bookings & Reservations",
+          "content": [
+            {
+              "subtitle": "Booking confirmation",
+              "text": "A booking is confirmed when you receive a confirmation email from Selora containing a unique booking reference. Until that email is received, no reservation has been made. Please check your spam folder if you do not receive confirmation within 15 minutes."
+            },
+            {
+              "subtitle": "Accuracy of guest details",
+              "text": "It is your responsibility to ensure that all guest names, dates, and room preferences entered during booking are correct. Selora is not liable for any losses arising from booking errors made by you."
+            },
+            {
+              "subtitle": "Hotel's right to refuse",
+              "text": "Hotels reserve the right to refuse check-in if guests do not present valid identification, are under the minimum age, or violate the hotel's own policies. In such cases, Selora's liability is limited to the amount you paid for the booking."
+            }
+          ]
+        },
+        {
+          "id": "payments",
+          "title": "5. Payments & Pricing",
+          "content": [
+            {
+              "subtitle": "Pricing",
+              "text": "All prices on Selora are displayed in the currency you select and are inclusive of applicable taxes and fees, unless otherwise stated. We make every effort to display accurate pricing; however, in the event of a pricing error, we reserve the right to cancel the booking and issue a full refund."
+            },
+            {
+              "subtitle": "Payment processing",
+              "text": "Payments are processed securely by our PCI-DSS certified payment partners. By providing payment details, you authorise Selora to charge the full booking amount at the time of reservation, unless a pay-at-hotel option is selected."
+            },
+            {
+              "subtitle": "Currency & fees",
+              "text": "If your payment card is denominated in a different currency, your bank or card issuer may apply a foreign exchange fee. Selora is not responsible for any such charges. We recommend checking with your bank before booking."
+            }
+          ]
+        },
+        {
+          "id": "cancellations",
+          "title": "6. Cancellations & Refunds",
+          "content": [
+            {
+              "subtitle": "Cancellation terms",
+              "text": "Each booking is subject to the cancellation policy of the hotel at which you have reserved. The applicable policy is displayed clearly on the hotel page and in your booking confirmation. Please review our full Cancellation Policy page for a detailed breakdown."
+            },
+            {
+              "subtitle": "Refund processing",
+              "text": "Eligible refunds are processed within 3–5 business days of cancellation. Depending on your card issuer, funds may take an additional 5–10 business days to appear in your account. Selora is not responsible for delays caused by your bank."
+            },
+            {
+              "subtitle": "Force majeure",
+              "text": "In the event of extraordinary circumstances beyond either party's control (natural disasters, government travel bans, pandemics, etc.), we will work with hotel partners to offer vouchers, date changes, or refunds on a case-by-case basis."
+            }
+          ]
+        },
+        {
+          "id": "conduct",
+          "title": "7. User Conduct",
+          "content": [
+            {
+              "subtitle": "Acceptable use",
+              "text": "You agree to use Selora only for lawful purposes and in accordance with these Terms. You must not use the Platform to make fraudulent bookings, misrepresent your identity, or engage in any activity that disrupts the Platform or harms other users."
+            },
+            {
+              "subtitle": "Prohibited activities",
+              "text": "The following are strictly prohibited: scraping or crawling the Platform without authorisation; reverse engineering our software; posting false or misleading reviews; using automated tools to make or modify bookings; or reselling bookings without our written consent."
+            },
+            {
+              "subtitle": "Reviews and content",
+              "text": "When submitting a review, you grant Selora a non-exclusive, royalty-free licence to display, reproduce, and distribute your content. You confirm that your review is genuine, based on your own stay, and free from offensive or discriminatory language."
+            }
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "8. Limitation of Liability",
+          "content": [
+            {
+              "subtitle": "Selora's liability",
+              "text": "To the maximum extent permitted by law, Selora's total liability to you for any claim arising from your use of the Platform shall not exceed the total amount paid by you for the booking to which the claim relates."
+            },
+            {
+              "subtitle": "Excluded losses",
+              "text": "Selora is not liable for: loss of profits, loss of data, indirect or consequential losses, losses arising from the act or omission of a hotel partner, or any loss arising from circumstances beyond our reasonable control."
+            },
+            {
+              "subtitle": "No warranty",
+              "text": "The Platform is provided 'as is' and 'as available'. We do not warrant that the Platform will be error-free, virus-free, or continuously available. We do not endorse or warrant the quality of any hotel listed on the Platform beyond our own curation standards."
+            }
+          ]
+        },
+        {
+          "id": "intellectual-property",
+          "title": "9. Intellectual Property",
+          "content": [
+            {
+              "subtitle": "Our content",
+              "text": "All content on the Platform — including text, graphics, logos, icons, and software — is the property of Selora SAS or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce or distribute any content without our written consent."
+            },
+            {
+              "subtitle": "Your licence to use the Platform",
+              "text": "We grant you a limited, non-exclusive, non-transferable licence to access and use the Platform for personal, non-commercial travel booking purposes. This licence does not include the right to resell or commercially exploit any part of the Platform."
+            }
+          ]
+        },
+        {
+          "id": "governing-law",
+          "title": "10. Governing Law & Disputes",
+          "content": [
+            {
+              "subtitle": "Applicable law",
+              "text": "These Terms are governed by the laws of France, without regard to its conflict of law provisions. Any dispute arising from or relating to these Terms or your use of Selora shall be subject to the exclusive jurisdiction of the courts of Paris, France."
+            },
+            {
+              "subtitle": "EU consumer rights",
+              "text": "If you are a consumer resident in the European Union, you may have additional rights under local consumer protection law that cannot be excluded by these Terms. Nothing in these Terms is intended to limit any rights you have under applicable EU consumer law."
+            },
+            {
+              "subtitle": "Informal resolution",
+              "text": "Before initiating any formal legal proceedings, we encourage you to contact us at legal@selora.com. We will make every effort to resolve disputes amicably within 30 days."
+            }
+          ]
+        }
+      ],
+      "relatedPolicies": [
+        {
+          "title": "Privacy Policy",
+          "description": "How we collect, use, and protect your personal data."
+        },
+        {
+          "title": "Cancellation Policy",
+          "description": "Refund timelines and cancellation procedures explained."
+        },
+        {
+          "title": "Safety",
+          "description": "Our commitments to keeping your bookings secure."
+        }
+      ]
+    },
+    "cookies": {
+      "heroBadge": "Transparent by Design",
+      "heroTitle": "Cookie Policy",
+      "lastUpdated": "Last updated: 1 April 2026",
+      "introEyebrow": "Our Approach",
+      "introTitle": "We keep it simple and honest",
+      "introP1": "This Cookie Policy explains what cookies Selora uses, why we use them, and how you can control them. We believe in full transparency — you should always know what's running on your device and why.",
+      "introP2": "We only use cookies that are necessary for our platform to work, to improve your experience, and to understand how people use Selora. We never use advertising or tracking cookies.",
+      "introBullets": [
+        "Essential cookies only — no ad tracking",
+        "No data sold to third parties",
+        "Full control via Cookie Settings",
+        "GDPR & ePrivacy compliant"
+      ],
+      "typesEyebrow": "Cookie Categories",
+      "typesTitle": "Types of Cookies We Use",
+      "typesSubtitle": "Here is a complete breakdown of every category of cookie on our platform — including what we don't use.",
+      "cookieNameHeader": "Cookie name",
+      "purposeHeader": "Purpose",
+      "durationHeader": "Duration",
+      "noCookies": "No cookies of this type are set on our platform.",
+      "detailsEyebrow": "Further Reading",
+      "detailsTitle": "Policy Details",
+      "questionsTitle": "Questions about cookies?",
+      "questionsText": "Contact our privacy team at",
+      "questionsText2": "or write to us at Selora SAS, 14 Rue du Faubourg Saint-Honoré, 75008 Paris, France.",
+      "relatedEyebrow": "Also Read",
+      "relatedTitle": "Related Policies",
+      "ctaTitle": "Book with Confidence",
+      "ctaSubtitle": "Your privacy is built into everything we do. Explore our collection of luxury hotels knowing we respect your data.",
+      "exploreHotels": "Explore Hotels",
+      "askQuestion": "Ask a Question",
+      "cookieTypes": [
+        {
+          "id": "essential",
+          "badge": "Always Active",
+          "title": "Essential Cookies",
+          "description": "These cookies are strictly necessary for the Selora platform to function. They enable core features such as authentication, session management, security, and booking checkout. You cannot opt out of essential cookies — without them, the website cannot operate.",
+          "examples": [
+            {
+              "name": "session_id",
+              "purpose": "Keeps you logged in during your visit",
+              "duration": "Session"
+            },
+            {
+              "name": "csrf_token",
+              "purpose": "Protects against cross-site request forgery",
+              "duration": "Session"
+            },
+            {
+              "name": "cookie_consent",
+              "purpose": "Stores your cookie preferences",
+              "duration": "12 months"
+            }
+          ]
+        },
+        {
+          "id": "analytics",
+          "badge": "Optional",
+          "title": "Analytics Cookies",
+          "description": "These cookies help us understand how visitors interact with our platform — which pages are most popular, where users drop off, and how we can improve the experience. All analytics data is aggregated and anonymised; we never use it to identify individual users.",
+          "examples": [
+            {
+              "name": "_ga",
+              "purpose": "Google Analytics — distinguishes users",
+              "duration": "24 months"
+            },
+            {
+              "name": "_ga_*",
+              "purpose": "Google Analytics — maintains session state",
+              "duration": "24 months"
+            },
+            {
+              "name": "plausible_ignore",
+              "purpose": "Opt-out flag for internal analytics",
+              "duration": "Persistent"
+            }
+          ]
+        },
+        {
+          "id": "preferences",
+          "badge": "Optional",
+          "title": "Preference Cookies",
+          "description": "These cookies remember choices you make to personalise your experience — such as your preferred language, currency, theme (light/dark mode), and search filters. Without them, you'll need to re-enter your preferences each visit.",
+          "examples": [
+            {
+              "name": "preferred_currency",
+              "purpose": "Saves your selected currency",
+              "duration": "12 months"
+            },
+            {
+              "name": "theme",
+              "purpose": "Remembers your light/dark mode choice",
+              "duration": "12 months"
+            },
+            {
+              "name": "search_filters",
+              "purpose": "Retains your last hotel search settings",
+              "duration": "30 days"
+            }
+          ]
+        },
+        {
+          "id": "marketing",
+          "badge": "Not used",
+          "title": "Marketing & Advertising Cookies",
+          "description": "Selora does not use third-party advertising cookies or tracking pixels for retargeting purposes. We do not share your browsing behaviour with ad networks. You will not see Selora ads following you around the internet as a result of cookies set on our platform.",
+          "examples": []
+        }
+      ],
+      "sections": [
+        {
+          "id": "what-are-cookies",
+          "title": "What Are Cookies?",
+          "content": "Cookies are small text files that are placed on your device (computer, phone, or tablet) when you visit a website. They are widely used to make websites work more efficiently and to provide information to the website owner. Cookies can be \"session cookies\" (deleted when you close your browser) or \"persistent cookies\" (stored for a set period or until you delete them). We also use similar technologies such as local storage and session storage, which are covered by this policy."
+        },
+        {
+          "id": "how-we-use",
+          "title": "How We Use Cookies",
+          "content": "Selora uses cookies for four main purposes: to make our platform work (essential), to understand how it is used (analytics), to remember your preferences (preference), and to keep your account and transactions secure (security). We do not use cookies for advertising or behavioural tracking. The full breakdown of each category, including specific cookie names, purposes, and retention periods, is detailed in the Cookie Types section above."
+        },
+        {
+          "id": "third-party",
+          "title": "Third-Party Cookies",
+          "content": "Some features of our platform involve third-party services that may set their own cookies. These include our payment processors (who use cookies to detect fraud and secure transactions) and our analytics provider. We vet all third-party partners carefully and require them to adhere to applicable data protection laws. Third-party cookies are subject to the privacy policies of the respective providers, not this Cookie Policy."
+        },
+        {
+          "id": "managing-cookies",
+          "title": "Managing Your Cookie Preferences",
+          "content": "You can manage your cookie preferences at any time using the Cookie Settings panel accessible from the footer of this page. You may also control cookies through your browser settings — most browsers allow you to block, delete, or receive alerts about cookies. Please note that blocking essential cookies will affect the functionality of the Selora platform and you may not be able to complete a booking. Instructions for managing cookies are available in the help section of your browser (Chrome, Firefox, Safari, Edge)."
+        },
+        {
+          "id": "retention",
+          "title": "Cookie Retention Periods",
+          "content": "Session cookies are deleted automatically when you close your browser. Persistent cookies are stored for varying periods depending on their purpose — from 30 days (short-term preferences) to 24 months (analytics). You can view the retention period for each specific cookie in the Cookie Types table above. We review and update cookie retention periods annually to ensure they remain proportionate."
+        },
+        {
+          "id": "updates",
+          "title": "Updates to This Policy",
+          "content": "We may update this Cookie Policy from time to time to reflect changes in technology, legislation, or our practices. When we make significant changes, we will display a notice on our platform and, where appropriate, seek fresh consent. The date at the top of this page always shows when the policy was last revised."
+        }
+      ],
+      "related": [
+        {
+          "id": "privacy",
+          "href": "/privacy-policy",
+          "title": "Privacy Policy",
+          "description": "How we collect, use, and protect your personal data."
+        },
+        {
+          "id": "terms",
+          "href": "/terms-of-service",
+          "title": "Terms of Service",
+          "description": "The rules governing your use of the Selora platform."
+        },
+        {
+          "id": "safety",
+          "href": "/safety",
+          "title": "Safety",
+          "description": "Our commitments to keeping your bookings secure."
+        }
+      ],
+      "introBadges": [
+        "Essential cookies only — no ad tracking",
+        "No data sold to third parties",
+        "Full control via Cookie Settings",
+        "GDPR & ePrivacy compliant"
+      ]
+    },
+    "accessibility": {
+      "heroBadge": "Inclusive by Design",
+      "heroTitle": "Accessibility",
+      "heroSubtitle": "Selora is built for everyone. We are committed to making luxury travel accessible to all guests, regardless of disability or assistive technology.",
+      "commitmentEyebrow": "Our Commitment",
+      "commitmentTitle": "Travel without barriers",
+      "commitmentP1": "We believe that exceptional hospitality must be inclusive. Whether you use a screen reader, navigate by keyboard, or require specific hotel facilities, Selora is designed to support you at every step.",
+      "commitmentP2": "Our engineering and design teams follow accessibility best practices from the first line of code. We test with real assistive technologies and consult with users who have disabilities to continuously improve our platform.",
+      "commitmentP3": "This is an ongoing commitment. If something doesn't work for you, we want to know — and we will fix it.",
+      "inclusiveFirstTitle": "Inclusive First",
+      "inclusiveFirstText": "Accessibility is a core design principle, not an afterthought.",
+      "featuresEyebrow": "Platform Features",
+      "featuresTitle": "Built for Every User",
+      "featuresSubtitle": "From screen readers to motor navigation, we've addressed the full spectrum of accessibility needs across our platform.",
+      "standardsEyebrow": "Compliance",
+      "standardsTitle": "Standards We Follow",
+      "standardsSubtitle": "Our accessibility programme is benchmarked against the leading international standards for digital inclusion.",
+      "hotelsEyebrow": "At Our Hotels",
+      "hotelsTitle": "Accessible Hotel Features",
+      "hotelsP1": "We clearly display accessibility information for every hotel in our collection. Our hotel partners provide details on physical access, assistive facilities, and services available to guests with disabilities.",
+      "hotelsP2": "If you need specific facilities not listed on a hotel page, contact our support team before booking. We will verify directly with the property and help you find the best match for your needs.",
+      "talkToTeam": "Talk to Our Team",
+      "limitationsTitle": "Known Limitations & Ongoing Work",
+      "limitationsP1": "While we strive for full WCAG 2.1 AA compliance, some areas of our platform are still being improved. Current known limitations include: complex date picker interactions on older browsers, some third-party map embeds that lack full screen reader support, and certain PDF documents that are not yet screen-reader optimised.",
+      "limitationsP2": "We are actively working to resolve all known issues. If you encounter a barrier not listed here, please report it — your feedback directly shapes our accessibility roadmap.",
+      "faqEyebrow": "Common Questions",
+      "faqTitle": "Accessibility FAQs",
+      "faqSubtitle": "Answers to the most common questions about accessibility on our platform and at our hotels.",
+      "feedbackTitle": "Send Us Accessibility Feedback",
+      "feedbackText": "Found a barrier? Something that doesn't work with your assistive technology? We want to hear from you. Every report helps us build a more inclusive platform for everyone.",
+      "feedbackEmail": "selorabooking@gmail.com",
+      "feedbackResponse": "Response within 2 business days",
+      "contactUs": "Contact Us",
+      "ctaTitle": "Luxury Travel for Everyone",
+      "ctaSubtitle": "Browse our collection of 43+ verified luxury hotels, filtered by the accessibility features that matter most to you.",
+      "exploreHotels": "Explore Hotels",
+      "getHelp": "Get Personal Help",
+      "stats": [
+        {
+          "value": "WCAG 2.1",
+          "label": "Target AA level"
+        },
+        {
+          "value": "3",
+          "label": "Screen readers tested"
+        },
+        {
+          "value": "EN 301 549",
+          "label": "EU compliant"
+        },
+        {
+          "value": "24/7",
+          "label": "Accessibility support"
+        }
+      ],
+      "commitments": [
+        {
+          "title": "Visual Accessibility",
+          "description": "All text meets WCAG AA contrast ratios. Images include descriptive alt text. Our interface supports zoom up to 200% without loss of content or functionality. We offer a light and dark theme to reduce eye strain.",
+          "features": [
+            "AA contrast compliance",
+            "Full alt text coverage",
+            "200% zoom support",
+            "Dark mode"
+          ]
+        },
+        {
+          "title": "Auditory Accessibility",
+          "description": "Our platform does not rely solely on audio cues to convey information. All interactive feedback is also provided visually. We do not use auto-playing audio or video with sound.",
+          "features": [
+            "No audio-only content",
+            "Visual alert alternatives",
+            "No auto-play sound",
+            "Captions on video"
+          ]
+        },
+        {
+          "title": "Motor & Navigation",
+          "description": "Every feature on Selora is accessible via keyboard navigation alone. We use logical tab order, visible focus indicators, and skip-to-content links. All interactive elements have a minimum touch target of 44×44px.",
+          "features": [
+            "Full keyboard navigation",
+            "Visible focus rings",
+            "Skip-to-content links",
+            "44px touch targets"
+          ]
+        },
+        {
+          "title": "Cognitive Accessibility",
+          "description": "We write in plain, clear language and keep our interfaces uncluttered. Important actions are labelled explicitly, and we avoid time-limited interactions wherever possible. Error messages are descriptive and suggest next steps.",
+          "features": [
+            "Plain language",
+            "Descriptive error messages",
+            "No time pressure",
+            "Consistent layouts"
+          ]
+        },
+        {
+          "title": "Screen Reader Support",
+          "description": "Selora is built with semantic HTML and ARIA landmarks so screen readers can interpret every page correctly. We test regularly with NVDA, JAWS, and VoiceOver across desktop and mobile platforms.",
+          "features": [
+            "Semantic HTML",
+            "ARIA landmarks",
+            "NVDA & JAWS tested",
+            "VoiceOver compatible"
+          ]
+        },
+        {
+          "title": "Mobile Accessibility",
+          "description": "Our responsive design works seamlessly with iOS VoiceOver and Android TalkBack. Text reflows correctly at any screen size, and gestures are never the only way to perform an action.",
+          "features": [
+            "iOS VoiceOver ready",
+            "Android TalkBack ready",
+            "Responsive text reflow",
+            "No gesture-only actions"
+          ]
+        }
+      ],
+      "standards": [
+        {
+          "code": "WCAG 2.1 AA",
+          "title": "Web Content Accessibility Guidelines",
+          "description": "Our target conformance level for all new and updated features on the Selora platform.",
+          "status": "Target standard"
+        },
+        {
+          "code": "EN 301 549",
+          "title": "European Accessibility Standard",
+          "description": "The EU standard for ICT accessibility, aligned with WCAG 2.1 AA, applicable to our EU user base.",
+          "status": "Compliant"
+        },
+        {
+          "code": "ARIA 1.2",
+          "title": "Accessible Rich Internet Applications",
+          "description": "We follow WAI-ARIA 1.2 specifications for dynamic and interactive content throughout the platform.",
+          "status": "Implemented"
+        },
+        {
+          "code": "Section 508",
+          "title": "US Federal Accessibility Standard",
+          "description": "We align with Section 508 requirements to serve users in the United States, including those using assistive technologies.",
+          "status": "Aligned"
+        }
+      ],
+      "hotelFeatures": [
+        "Wheelchair-accessible rooms and public areas",
+        "Step-free entrances and lifts",
+        "Accessible bathrooms with grab rails and roll-in showers",
+        "Visual fire alarms and vibrating bed alerts",
+        "Text telephone (TTY) or video relay services",
+        "Hearing loops in public areas",
+        "Braille or large-print menus on request",
+        "Service animal-friendly rooms and facilities"
+      ],
+      "faqs": [
+        {
+          "question": "How do I request an accessible room?",
+          "answer": "On any hotel detail page, look for the Accessibility section which lists all available features. When booking, use the Special Requests field to specify your needs. You can also contact our support team directly and we will liaise with the hotel on your behalf."
+        },
+        {
+          "question": "Are accessibility features verified?",
+          "answer": "Yes. Our curation team verifies accessibility information provided by hotel partners. We visit properties in person and cross-reference claims with guest reviews. Where information is unverified, we clearly mark it as self-reported by the hotel."
+        },
+        {
+          "question": "What if I need help completing a booking?",
+          "answer": "Our support team is available by phone, live chat, and email to assist with any booking. If you need help navigating the website, we can complete the booking on your behalf — just call us or start a live chat session."
+        },
+        {
+          "question": "Can I filter hotels by accessibility features?",
+          "answer": "Yes. On the Hotels search page, use the Accessibility filter to show only properties with specific features — such as wheelchair access, accessible bathrooms, or hearing loops. We are continually expanding our filter options."
+        },
+        {
+          "question": "How do you test for accessibility?",
+          "answer": "We conduct accessibility testing at multiple stages: automated scans using axe-core during development, manual keyboard and screen reader testing with NVDA, JAWS, and VoiceOver, and periodic third-party accessibility audits. Issues are logged and prioritised in our bug tracking system."
+        },
+        {
+          "question": "How do I report an accessibility problem?",
+          "answer": "Please use our Accessibility Feedback form below or email us at selorabooking@gmail.com. Include a description of the issue, the page or feature affected, and the assistive technology you are using. We aim to acknowledge all reports within 2 business days and resolve critical issues within 14 days."
+        },
+        {
+          "question": "Is the Selora website usable with a screen reader?",
+          "answer": "Yes. Our website is designed to work with major screen readers including NVDA, JAWS, and Apple VoiceOver. All images have descriptive alternative text, forms are fully labelled, and interactive elements include appropriate ARIA roles. We welcome feedback if you encounter any screen reader issues."
+        },
+        {
+          "question": "Can I increase text size without breaking the layout?",
+          "answer": "Yes. The Selora website is designed to respond gracefully to browser-level text scaling. You can increase text size in your browser settings up to 200% without significant loss of content or functionality. We also recommend using your operating system's built-in zoom or magnification tools."
+        },
+        {
+          "question": "Do you offer an alternative format for booking confirmations and documents?",
+          "answer": "Yes. If you need booking confirmations or policy documents in large print, plain text, or another accessible format, please contact our support team and we will prepare these for you as promptly as possible."
+        }
+      ]
+    },
+    "lastUpdated": "Last updated: {{date}}"
+  },
+  "compare": {
+    "pageTitle": "Compare hotels",
+    "pageSubtitle_one": "{{count}} hotel in comparison",
+    "pageSubtitle_other": "{{count}} hotels in comparison",
+    "addToCompare": "Compare",
+    "inCompare": "In comparison",
+    "added_one": "Added to compare ({{count}} hotel)",
+    "added_other": "Added to compare ({{count}} hotels)",
+    "removed": "Removed from comparison",
+    "maxReached": "You can compare up to {{max}} hotels",
+    "emptyTitle": "Your comparison list is empty",
+    "emptyText": "Add hotels from cards or hotel pages to see them side by side.",
+    "browseHotels": "Browse hotels",
+    "clearAll": "Clear all",
+    "remove": "Remove from comparison",
+    "viewHotel": "Open hotel",
+    "fields": {
+      "stars": "Stars",
+      "rating": "Rating",
+      "price": "Per night",
+      "checkInOut": "Check-in / Check-out",
+      "parkingFree": "Free parking",
+      "wheelchair": "Wheelchair access",
+      "pets": "Pet friendly",
+      "children": "Family friendly",
+      "languages": "Languages",
+      "amenities": "Amenities count",
+      "topAmenities": "Top amenities"
+    }
+  }
+}
