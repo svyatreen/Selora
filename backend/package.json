@@ -14,6 +14,7 @@
     "db:push-force": "drizzle-kit push --force --config ./drizzle.config.ts"
   },
   "dependencies": {
+    "@getbrevo/brevo": "^5.0.4",
     "@types/nodemailer": "^8.0.0",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
@@ -26,7 +27,6 @@
     "pg": "^8.20.0",
     "pino": "^9",
     "pino-http": "^10",
-    "resend": "^6.12.3",
     "stripe": "^22.1.0",
     "zod": "^3.25.76"
   },

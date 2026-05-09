@@ -1,10 +1,9 @@
-import { Resend } from "resend";
+import { BrevoClient } from "@getbrevo/brevo";
 import { logger } from "./logger";
 
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const FROM_EMAIL = "Selora Hotels <onboarding@resend.dev>";
+const BREVO_API_KEY = process.env.BREVO_API_KEY;
 
-const resend = new Resend(RESEND_API_KEY);
+const brevoClient = new BrevoClient({ apiKey: BREVO_API_KEY || "" });
 
 const CURRENCY_SYMBOLS: Record<string, { symbol: string; position: "before" | "after"; decimals: number }> = {
   USD: { symbol: "$", position: "before", decimals: 2 },
@@ -66,42 +65,38 @@ export async function sendMail(opts: {
   subject: string;
   html: string;
 }): Promise<void> {
-  if (!RESEND_API_KEY) {
-    logger.warn({ to: opts.to }, "RESEND_API_KEY not set — email not sent");
+  if (!BREVO_API_KEY) {
+    logger.warn({ to: opts.to }, "BREVO_API_KEY not set — email not sent");
     return;
   }
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
-      to: opts.to,
+    const response = await brevoClient.transactionalEmails.sendTransacEmail({
+      sender: { email: "selorabooking@gmail.com", name: "Selora Hotels" },
+      to: [{ email: opts.to }],
       subject: opts.subject,
-      html: opts.html,
+      htmlContent: opts.html,
     });
-    if (error) {
-      logger.error({ error, to: opts.to, subject: opts.subject }, "Failed to send email");
-      throw error;
-    }
     logger.info({ 
       to: opts.to, 
       subject: opts.subject,
-      id: data?.id 
-    }, "Email sent successfully");
+      messageId: response.messageId 
+    }, "Email sent successfully via Brevo");
   } catch (err) {
-    logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email");
+    logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email via Brevo");
     throw err;
   }
 }
 
 export function checkMailerConfig(): { configured: boolean; message: string } {
-  if (!RESEND_API_KEY) {
+  if (!BREVO_API_KEY) {
     return {
       configured: false,
-      message: "RESEND_API_KEY environment variable is not set. Email notifications will NOT work."
+      message: "BREVO_API_KEY environment variable is not set. Email notifications will NOT work."
     };
   }
   return {
     configured: true,
-    message: "Resend mailer is configured and ready."
+    message: "Brevo mailer is configured and ready."
   };
 }
 
