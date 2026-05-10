@@ -13,11 +13,12 @@ const transporter = nodemailer.createTransport({
   host: SMTP_HOST,
   port: SMTP_PORT,
   secure: false, // true for 465, false for other ports
+  family: 4, // Force IPv4 (Railway doesn't support IPv6)
   auth: {
     user: SMTP_USER,
     pass: SMTP_PASS,
   },
-});
+} as nodemailer.TransportOptions);
 
 const CURRENCY_SYMBOLS: Record<string, { symbol: string; position: "before" | "after"; decimals: number }> = {
   USD: { symbol: "$", position: "before", decimals: 2 },

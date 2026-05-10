@@ -874,7 +874,7 @@ function AddCardForm({ onDone, onCancel }: { onDone: () => void; onCancel: () =>
   const createCard = useCreatePaymentMethod();
   const [saving, setSaving] = useState(false);
 
-  const cardOptions = {
+  const cardOptions: Record<string, unknown> = {
     style: {
       base: {
         fontSize: "15px",
@@ -887,6 +887,7 @@ function AddCardForm({ onDone, onCancel }: { onDone: () => void; onCancel: () =>
       invalid: { color: theme === "dark" ? "#f87171" : "#ef4444" },
     },
     hidePostalCode: true,
+    disableLink: true,
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -1052,7 +1053,7 @@ function PaymentMethodsCard() {
                 <X className="h-4 w-4" />
               </Button>
             </div>
-            <Elements stripe={stripePromise} options={{ locale: (i18n.language === 'ru' ? 'ru' : 'en') as any, disableLink: true }}>
+            <Elements stripe={stripePromise} options={{ locale: (i18n.language === 'ru' ? 'ru' : 'en') as any, disableLink: true } as Record<string, unknown>}>
               <AddCardForm onDone={() => setShowAdd(false)} onCancel={() => setShowAdd(false)} />
             </Elements>
           </div>
