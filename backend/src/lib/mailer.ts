@@ -1,24 +1,53 @@
-import * as nodemailer from "nodemailer";
+import { google } from "googleapis";
 import { logger } from "./logger";
 
-// Gmail SMTP configuration
-const SMTP_HOST = process.env.SMTP_HOST || "smtp.gmail.com";
-const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587", 10);
-const SMTP_USER = process.env.SMTP_USER || "";
-const SMTP_PASS = process.env.SMTP_PASS || "";
+// Gmail API configuration (works on any hosting - port 443)
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID || "";
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET || "";
+const GOOGLE_REFRESH_TOKEN = process.env.GOOGLE_REFRESH_TOKEN || "";
 const SMTP_FROM = process.env.SMTP_FROM || "Selora Hotels <selorabooking@gmail.com>";
 
-// Create transporter
-const transporter = nodemailer.createTransport({
-  host: SMTP_HOST,
-  port: SMTP_PORT,
-  secure: false, // true for 465, false for other ports
-  family: 4, // Force IPv4 (Railway doesn't support IPv6)
-  auth: {
-    user: SMTP_USER,
-    pass: SMTP_PASS,
-  },
-} as nodemailer.TransportOptions);
+// Create OAuth2 client
+function createOAuth2Client() {
+  const oauth2Client = new google.auth.OAuth2(
+    GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET,
+    "https://developers.google.com/oauthplayground"
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: GOOGLE_REFRESH_TOKEN,
+  });
+
+  return oauth2Client;
+}
+
+// Get Gmail client
+function getGmailClient() {
+  const oauth2Client = createOAuth2Client();
+  return google.gmail({ version: "v1", auth: oauth2Client });
+}
+
+// Encode email to base64url format
+function encodeEmail(to: string, subject: string, html: string): string {
+  const from = SMTP_FROM;
+  const email = [
+    `From: ${from}`,
+    `To: ${to}`,
+    `Subject: =?UTF-8?B?${Buffer.from(subject).toString("base64")}?=`,
+    "MIME-Version: 1.0",
+    "Content-Type: text/html; charset=UTF-8",
+    "Content-Transfer-Encoding: base64",
+    "",
+    Buffer.from(html).toString("base64"),
+  ].join("\r\n");
+
+  return Buffer.from(email)
+    .toString("base64")
+    .replace(/\+/g, "-")
+    .replace(/\//g, "_")
+    .replace(/=+$/, "");
+}
 
 const CURRENCY_SYMBOLS: Record<string, { symbol: string; position: "before" | "after"; decimals: number }> = {
   USD: { symbol: "$", position: "before", decimals: 2 },
@@ -80,38 +109,43 @@ export async function sendMail(opts: {
   subject: string;
   html: string;
 }): Promise<void> {
-  if (!SMTP_USER || !SMTP_PASS) {
-    logger.warn({ to: opts.to }, "SMTP credentials not set — email not sent");
+  if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET || !GOOGLE_REFRESH_TOKEN) {
+    logger.warn({ to: opts.to }, "Gmail API credentials not set — email not sent");
     return;
   }
+
   try {
-    const info = await transporter.sendMail({
-      from: SMTP_FROM,
-      to: opts.to,
-      subject: opts.subject,
-      html: opts.html,
+    const gmail = getGmailClient();
+    const raw = encodeEmail(opts.to, opts.subject, opts.html);
+
+    const response = await gmail.users.messages.send({
+      userId: "me",
+      requestBody: {
+        raw,
+      },
     });
+
     logger.info({
       to: opts.to,
       subject: opts.subject,
-      messageId: info.messageId
-    }, "Email sent successfully via Gmail SMTP");
+      messageId: response.data.id,
+    }, "Email sent successfully via Gmail API");
   } catch (err) {
-    logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email via Gmail SMTP");
+    logger.error({ err, to: opts.to, subject: opts.subject }, "Failed to send email via Gmail API");
     throw err;
   }
 }
 
 export function checkMailerConfig(): { configured: boolean; message: string } {
-  if (!SMTP_USER || !SMTP_PASS) {
+  if (!GOOGLE_CLIENT_ID || !GOOGLE_CLIENT_SECRET || !GOOGLE_REFRESH_TOKEN) {
     return {
       configured: false,
-      message: "SMTP_USER and SMTP_PASS environment variables are not set. Email notifications will NOT work."
+      message: "Gmail API credentials (GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN) are not set. Email notifications will NOT work."
     };
   }
   return {
     configured: true,
-    message: "Gmail SMTP mailer is configured and ready."
+    message: "Gmail API mailer is configured and ready."
   };
 }
 
@@ -426,7 +460,7 @@ export function emailContactConfirm(opts: {
   };
 }
 
-export function emailNewsletterSubscribed(email: string): { subject: string; html: string } {
+export function emailNewsletterSubscribed(_email: string): { subject: string; html: string } {
   return {
     subject: "Вы подписались на рассылку Selora 📬",
     html: baseTemplate(
