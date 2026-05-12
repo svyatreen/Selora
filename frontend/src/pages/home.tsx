@@ -46,7 +46,7 @@ export default function Home() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      setLocation(`/hotels?city=${encodeURIComponent(searchQuery)}`);
+      setLocation(`/hotels?city=${encodeURIComponent(searchQuery.toLowerCase())}`);
     } else {
       setLocation('/hotels');
     }
@@ -164,12 +164,12 @@ export default function Home() {
               { city: "Bali",   img: "1537996194471-e657df975ab4" },
               { city: "London", img: "1513635269975-59663e0ac1ad" },
             ].map(({ city, img }) => {
-              const count = stats?.featuredCities?.find(c => c.city === city)?.count;
+              const count = stats?.featuredCities?.find(c => c.city.toLowerCase() === city.toLowerCase())?.count;
               return (
                 <div
                   key={city}
                   className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer"
-                  onClick={() => setLocation(`/hotels?city=${encodeURIComponent(city)}`)}
+                  onClick={() => setLocation(`/hotels?city=${encodeURIComponent(city.toLowerCase())}`)}
                 >
                   <img
                     src={`https://images.unsplash.com/photo-${img}?auto=format&fit=crop&q=80&w=800`}

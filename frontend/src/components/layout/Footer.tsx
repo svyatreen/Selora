@@ -19,7 +19,7 @@ export function Footer() {
               {['Paris', 'Tokyo', 'Bali', 'London'].map((city) => (
                 <li key={city}>
                   <Link
-                    href={`/hotels?city=${city}`}
+                    href={`/hotels?city=${city.toLowerCase()}`}
                     className="text-base text-muted-foreground transition-colors hover:text-primary"
                   >
                     {city}

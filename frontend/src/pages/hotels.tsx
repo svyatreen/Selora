@@ -142,7 +142,7 @@ export default function Hotels() {
 
   // Parse URL params
   const urlParams = useMemo(() => new URLSearchParams(searchString), [searchString]);
-  const cityFromUrl = urlParams.get("city") || "";
+  const cityFromUrl = (urlParams.get("city") || "").toLowerCase();
 
   // Initialize from URL or memory
   const initialFilters = hotelsFiltersMemory ?? DEFAULT_FILTERS;
@@ -173,7 +173,7 @@ export default function Hotels() {
   const updateUrl = useCallback((newSearch: string) => {
     const params = new URLSearchParams();
     if (newSearch.trim()) {
-      params.set("city", newSearch.trim());
+      params.set("city", newSearch.trim().toLowerCase());
     }
     const newSearchString = params.toString();
     const newUrl = newSearchString ? `/hotels?${newSearchString}` : "/hotels";
@@ -224,7 +224,7 @@ export default function Hotels() {
         if (debouncedPrice[1] < 1000 && price > debouncedPrice[1]) return false;
       }
       if (stars.length && !stars.includes(h.stars)) return false;
-      if (cities.length && !cities.includes(h.city)) return false;
+      if (cities.length && !cities.some((c) => c.toLowerCase() === h.city.toLowerCase())) return false;
       if (propertyTypes.length && !propertyTypes.includes(inferPropertyType(h.name))) return false;
       if (selectedAmenities.length && !selectedAmenities.every((a) => hotelHasAny(h.amenities, [a]))) return false;
       if (popularFacilities.length) {
@@ -492,7 +492,7 @@ export default function Hotels() {
                           {availableCities.map((c) => (
                             <label key={c} className="flex items-center gap-2 cursor-pointer">
                               <Checkbox
-                                checked={cities.includes(c)}
+                                checked={cities.some((city) => city.toLowerCase() === c.toLowerCase())}
                                 onCheckedChange={() => setCities((p) => toggleArr(p, c))}
                               />
                               <span className="text-sm">{c}</span>
