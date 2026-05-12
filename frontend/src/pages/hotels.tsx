@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useSearch } from "wouter";
+import { useEffect, useMemo, useState, useCallback } from "react";
+import { useSearch, useLocation } from "wouter";
 import { useListHotels, getListHotelsQueryKey } from "@/api";
 import { Layout } from "@/components/layout/Layout";
 import { HotelCard } from "@/components/ui/hotel-card";
@@ -138,16 +138,18 @@ export default function Hotels() {
   const { t } = useTranslation();
   const { formatPrice } = useCurrency();
   const searchString = useSearch();
-  const cityFromUrl = new URLSearchParams(searchString).get("city") || "";
+  const [, navigate] = useLocation();
+
+  // Parse URL params
+  const urlParams = useMemo(() => new URLSearchParams(searchString), [searchString]);
+  const cityFromUrl = urlParams.get("city") || "";
+
+  // Initialize from URL or memory
   const initialFilters = hotelsFiltersMemory ?? DEFAULT_FILTERS;
   const initialSearch = cityFromUrl || initialFilters.search;
 
   const [search, setSearch] = useState(initialSearch);
   const debouncedSearch = useDebounce(search, 400);
-  useEffect(() => {
-    if (!cityFromUrl) return;
-    setSearch(cityFromUrl);
-  }, [searchString]);
 
   const [priceRange, setPriceRange] = useState<number[]>(initialFilters.priceRange);
   const debouncedPrice = useDebounce(priceRange, 400);
@@ -166,6 +168,29 @@ export default function Hotels() {
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">(initialFilters.sortOrder);
 
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
+
+  // Sync URL with search state
+  const updateUrl = useCallback((newSearch: string) => {
+    const params = new URLSearchParams();
+    if (newSearch.trim()) {
+      params.set("city", newSearch.trim());
+    }
+    const newSearchString = params.toString();
+    const newUrl = newSearchString ? `/hotels?${newSearchString}` : "/hotels";
+    navigate(newUrl, { replace: true });
+  }, [navigate]);
+
+  // Update search from URL on mount and when URL changes
+  useEffect(() => {
+    if (cityFromUrl && cityFromUrl !== search) {
+      setSearch(cityFromUrl);
+    }
+  }, [cityFromUrl]);
+
+  // Update URL when debounced search changes
+  useEffect(() => {
+    updateUrl(search);
+  }, [debouncedSearch, updateUrl]);
 
   const { data: rawHotels, isLoading } = useListHotels(
     {
