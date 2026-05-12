@@ -1,7 +1,7 @@
 import { Router, type IRouter } from "express";
 import { z } from "zod/v4";
 import { db, usersTable, bookingsTable, roomsTable, hotelsTable } from "../db";
-import { eq, sql, inArray, or, like, and } from "drizzle-orm";
+import { eq, sql, inArray, or, ilike, and } from "drizzle-orm";
 import { requireAuth, requireAdmin } from "../middlewares/requireAuth";
 import { hashPassword, comparePassword } from "../lib/auth";
 import { resolveHotelDescription, resolveLang, resolveRoomDescription } from "../lib/resolve-description";
@@ -206,7 +206,7 @@ router.get("/admin/users", requireAdmin, async (req, res): Promise<void> => {
 
   const conditions: any[] = [];
   if (search) {
-    conditions.push(or(like(usersTable.name, `%${search}%`), like(usersTable.email, `%${search}%`)));
+    conditions.push(or(ilike(usersTable.name, `%${search}%`), ilike(usersTable.email, `%${search}%`)));
   }
   if (role && role !== 'all') {
     conditions.push(eq(usersTable.role, role as any));

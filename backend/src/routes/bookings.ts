@@ -10,7 +10,7 @@ import {
   bookingAddonsTable,
   bookingAddonSelectionsTable,
 } from '../db';
-import { eq, and, or, sql, inArray, like, desc } from 'drizzle-orm';
+import { eq, and, or, sql, inArray, ilike, desc } from 'drizzle-orm';
 import { z } from 'zod';
 import { requireAuth, requireAdmin } from '../middlewares/requireAuth';
 import {
@@ -141,9 +141,9 @@ router.get('/bookings', requireAdmin, async (req, res): Promise<void> => {
   if (search) {
     conditions.push(
       or(
-        like(usersTable.name, `%${search}%`),
-        like(usersTable.email, `%${search}%`),
-        like(hotelsTable.name, `%${search}%`),
+        ilike(usersTable.name, `%${search}%`),
+        ilike(usersTable.email, `%${search}%`),
+        ilike(hotelsTable.name, `%${search}%`),
       ),
     );
   }

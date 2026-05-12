@@ -1,6 +1,6 @@
 import { Router, type IRouter } from 'express';
 import { db, roomsTable, bookingsTable, roomRatePlansTable, hotelsTable } from '../db';
-import { eq, and, or, like, sql, asc, desc, inArray } from 'drizzle-orm';
+import { eq, and, or, ilike, sql, asc, desc, inArray } from 'drizzle-orm';
 import { requireAdmin } from '../middlewares/requireAuth';
 import {
   GetRoomsByHotelParams,
@@ -89,8 +89,8 @@ router.get('/admin/rooms', requireAdmin, async (req, res): Promise<void> => {
   if (search) {
     conditions.push(
       or(
-        like(hotelsTable.name, `%${search}%`),
-        like(sql`${roomsTable.type}::text`, `%${search}%`),
+        ilike(hotelsTable.name, `%${search}%`),
+        ilike(sql`${roomsTable.type}::text`, `%${search}%`),
       ),
     );
   }

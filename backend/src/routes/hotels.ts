@@ -8,7 +8,7 @@ import {
 } from '../db';
 import {
   eq,
-  like,
+  ilike,
   or,
   and,
   gte,
@@ -114,16 +114,16 @@ router.get('/hotels', async (req, res): Promise<void> => {
   if (search) {
     conditions.push(
       or(
-        like(hotelsTable.name, `%${search}%`),
-        like(hotelsTable.city, `%${search}%`),
-        like(hotelsTable.description_ru, `%${search}%`),
-        like(hotelsTable.description_en, `%${search}%`),
+        ilike(hotelsTable.name, `%${search}%`),
+        ilike(hotelsTable.city, `%${search}%`),
+        ilike(hotelsTable.description_ru, `%${search}%`),
+        ilike(hotelsTable.description_en, `%${search}%`),
       ),
     );
   }
 
   if (city) {
-    conditions.push(like(hotelsTable.city, `%${city}%`));
+    conditions.push(ilike(hotelsTable.city, `%${city}%`));
   }
 
   if (minRating != null) {
@@ -219,8 +219,8 @@ router.get('/admin/hotels', requireAdmin, async (req, res): Promise<void> => {
   if (search) {
     conditions.push(
       or(
-        like(hotelsTable.name, `%${search}%`),
-        like(hotelsTable.city, `%${search}%`),
+        ilike(hotelsTable.name, `%${search}%`),
+        ilike(hotelsTable.city, `%${search}%`),
       ),
     );
   }
