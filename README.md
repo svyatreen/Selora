@@ -14,7 +14,7 @@
 - 🏨 **Детальные страницы** отелей с фото, описанием, картой, отзывами
 - 🛏️ **Просмотр номеров** с тарифами, удобствами, доступностью
 - ❤️ **Избранное** — сохранение понравившихся отелей
-- 📅 **Бронирование** с выбором дат и дополнительных услуг
+- 📅 **Бронирование** с выбором дат, тарифных планов и дополнительных услуг
 - 💳 **Онлайн-оплата** через Stripe
 - ⭐ **Отзывы и рейтинги** от пользователей
 - 👁️ **Недавно просмотренные** отели
@@ -24,6 +24,7 @@
 - 👤 **Личный кабинет** с историей бронирований
 - 🛡️ **Админ-панель** для управления отелями, номерами, бронированиями и пользователями
 - 📧 **Контактная форма** для связи с поддержкой
+- 🗺️ **Интерактивные карты** с близлежащими объектами
 
 ---
 
@@ -52,6 +53,10 @@
 | **esbuild** | 0.27 | Сборка для продакшена |
 | **Stripe** | 22 | Платёжная система |
 | **Nodemailer** | 8 | Отправка email |
+| **googleapis** | 144 | Google OAuth API |
+| **cookie-parser** | 1 | Парсинг cookies |
+| **cors** | 2 | CORS middleware |
+| **dotenv** | 17 | Переменные окружения |
 
 ### 2.3 Фронтенд (`frontend/`)
 
@@ -71,7 +76,11 @@
 | **Lucide React** | 0.545 | Иконки |
 | **date-fns** | 3.6 | Работа с датами |
 | **Sonner** | 2.0 | Toast-уведомления |
-| **Stripe.js** | 9 | Клиентская часть оплаты |
+| **Stripe.js** | 9.4 | Клиентская часть оплаты |
+| **next-themes** | 0.4 | Управление темами |
+| **cmdk** | 1.1 | Command palette |
+| **vaul** | 1.1 | Drawer компоненты |
+| **react-icons** | 5.4 | Дополнительные иконки |
 
 ---
 
@@ -85,10 +94,10 @@ Booking/
 │   │   ├── components/      # UI компоненты
 │   │   │   ├── layout/      # Layout, Navbar, Footer
 │   │   │   ├── admin/       # Компоненты админ-панели
-│   │   │   ├── hotel/       # Компоненты отелей
-│   │   │   ├── room/        # Компоненты номеров
+│   │   │   ├── hotel/       # Компоненты отелей (карты, удобства, близлежащие объекты)
+│   │   │   ├── room/        # Компоненты номеров (тарифы, дополнения, удобства)
 │   │   │   ├── maps/        # Компоненты карт
-│   │   │   └── ui/          # Базовые UI компоненты
+│   │   │   └── ui/          # Базовые UI компоненты (shadcn/ui)
 │   │   ├── api/             # API клиент (сгенерирован)
 │   │   ├── hooks/           # Кастомные хуки
 │   │   ├── lib/             # Утилиты
@@ -104,8 +113,9 @@ Booking/
 │   │   ├── db/              # Схема БД и подключения
 │   │   │   └── schema/      # Drizzle схемы таблиц
 │   │   ├── middlewares/     # Express middleware
-│   │   ├── lib/             # Утилиты (auth, logger, stripe, mailer)
+│   │   ├── lib/             # Утилиты (auth, logger, stripe, mailer, geocoding)
 │   │   ├── data/           # Данные для сидинга
+│   │   ├── seed-*.mjs      # Скрипты заполнения данных
 │   │   └── zod/             # Zod схемы (сгенерированы)
 │   ├── drizzle.config.ts    # Конфиг Drizzle
 │   └── build.mjs            # Скрипт сборки
@@ -113,6 +123,7 @@ Booking/
 ├── package.json              # Корневой package.json
 ├── pnpm-workspace.yaml       # Конфигурация workspace
 ├── tsconfig.base.json        # Общие настройки TypeScript
+└── tsconfig.json             # Базовый tsconfig
 ```
 
 ---
@@ -138,6 +149,7 @@ Booking/
 | GET | `/api/hotels/:id` | Детали отеля |
 | GET | `/api/hotels/:id/similar` | Похожие отели |
 | GET | `/api/hotels/:hotelId/rooms` | Номера отеля |
+| GET | `/api/admin/hotels` | Список отелей (админ, с пагинацией) |
 | POST | `/api/admin/hotels` | Создание отеля (админ) |
 | PATCH | `/api/admin/hotels/:id` | Обновление отеля (админ) |
 | DELETE | `/api/admin/hotels/:id` | Удаление отеля (админ) |
@@ -147,6 +159,7 @@ Booking/
 | Метод | Путь | Описание |
 | ----- | ---- | -------- |
 | GET | `/api/rooms/:id` | Детали номера |
+| GET | `/api/rooms/:id/availability` | Проверка доступности номера |
 | POST | `/api/admin/rooms` | Создание номера (админ) |
 | PATCH | `/api/admin/rooms/:id` | Обновление номера (админ) |
 | DELETE | `/api/admin/rooms/:id` | Удаление номера (админ) |
@@ -159,7 +172,7 @@ Booking/
 | GET | `/api/bookings/:id` | Детали бронирования |
 | PATCH | `/api/bookings/:id/cancel` | Отмена бронирования |
 | PATCH | `/api/bookings/:id/pay` | Оплата бронирования |
-| GET | `/api/admin/bookings` | Все бронирования (админ) |
+| GET | `/api/admin/bookings` | Все бронирования (админ, с пагинацией) |
 
 ### Отзывы
 
@@ -255,24 +268,55 @@ Booking/
 - `created_at`
 
 ### Отели (hotels)
-- `name`, `description`, `city`, `address`
+- `name`, `description`, `description_ru`, `description_en`, `city`, `address`
 - `rating`, `stars`
 - `images[]`, `amenities[]`
-- `coordinates` (lat, lng)
+- `latitude`, `longitude` (координаты)
+- `amenitiesExtended` (расширенные удобства по категориям)
+- `languages[]` (языки персонала)
 - `checkInTime`, `checkOutTime`
+- `earlyCheckIn`, `lateCheckOut` (опции раннего/позднего въезда/выезда)
+- `parking` (информация о парковке)
+- `accessibility` (доступность для людей с ограниченными возможностями)
+- `petPolicy` (политика в отношении животных)
+- `childPolicy` (политика в отношении детей)
+- `paymentMethods[]`
+- `popularBadge` (популярный значок)
+- `includedInPrice[]`, `notIncluded[]`
+- `keyDistances[]` (ключевые расстояния)
+- `nearbyPlaces` (близлежащие объекты по категориям)
 
 ### Номера (rooms)
 - `hotelId` (FK)
 - `type`: `single` | `double` | `deluxe` | `suite`
-- `price`, `guests`, `description`
-- `images[]`, `amenities[]`
-- `viewType`: `sea` | `city` | `garden` | `courtyard`
+- `price`, `guests`, `totalRooms`
+- `description`, `description_ru`, `description_en`
+- `images[]`
+- `sizeSqm` (площадь в м²)
+- `floor` (этаж)
+- `viewType` (тип вида)
+- `bedConfiguration[]` (конфигурация кроватей)
+- `bathType` (тип ванной)
+- `soundproofing`, `nonSmoking`
+- `amenitiesDetailed` (детальные удобства по категориям)
+- `freeItems[]` (бесплатные услуги)
+
+### Тарифные планы (room_rate_plans)
+- `roomId` (FK)
+- `code`, `nameRu`, `nameEn`
+- `descriptionRu`, `descriptionEn`
+- `priceModifier` (модификатор цены)
+- `refundable` (возвратный)
+- `includesBreakfast`, `includesDinner`
+- `freeCancellationHours`
+- `lateCheckoutIncluded`
 
 ### Бронирования (bookings)
 - `userId`, `roomId` (FK)
 - `checkIn`, `checkOut`
-- `totalPrice`, `status`
-- `status`: `pending` | `confirmed` | `cancelled` | `paid`
+- `totalPrice`, `currency`, `exchangeRate`
+- `ratePlanCode`
+- `status`: `pending` | `confirmed` | `verified` | `cancelled`
 
 ### Отзывы (reviews)
 - `userId`, `hotelId` (FK)
@@ -323,8 +367,14 @@ cp frontend/.env.example frontend/.env
 
 #### Backend (`backend/.env`)
 ```env
-DATABASE_URL=postgresql...
+DATABASE_URL=postgresql://user:password@localhost:5432/selora
 STRIPE_SECRET_KEY=sk_test_...
+JWT_SECRET=your-jwt-secret
+SMTP_HOST=smtp.example.com
+SMTP_USER=your-email
+SMTP_PASS=your-password
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
 ```
 
 #### Frontend (`frontend/.env`)
@@ -339,20 +389,9 @@ VITE_STRIPE_PUBLISHABLE_KEY=pk_test_...
 # Бэкенд
 cd backend
 pnpm db:push    # Применение схемы БД
-pnpm dev         # Запуск сервера на :8080
+pnpm dev        # Запуск сервера на :8080
 
 # Фронтенд (в другом терминале)
 cd frontend
-pnpm dev         # Запуск на :5173
-```
-
-### Сборка для production
-
-```bash
-# Из корня проекта
-pnpm build
-
-# Или отдельно
-cd backend && pnpm build
-cd frontend && pnpm build
+pnpm dev        # Запуск на :5173
 ```
