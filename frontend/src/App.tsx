@@ -1,39 +1,38 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as SonnerToaster } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import { AuthProvider } from "@/contexts/AuthContext";
-import { ThemeProvider } from "@/contexts/ThemeContext";
-import { CurrencyProvider } from "@/contexts/CurrencyContext";
-import { ProtectedRoute } from "@/components/ProtectedRoute";
-import { CookieConsent } from "@/components/CookieConsent";
+import { Switch, Route, Router as WouterRouter } from 'wouter';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Toaster } from '@/components/ui/toaster';
+import { Toaster as SonnerToaster } from '@/components/ui/sonner';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import NotFound from '@/pages/not-found';
+import { AuthProvider } from '@/contexts/AuthContext';
+import { ThemeProvider } from '@/contexts/ThemeContext';
+import { CurrencyProvider } from '@/contexts/CurrencyContext';
+import { ProtectedRoute } from '@/components/ProtectedRoute';
+import { CookieConsent } from '@/components/CookieConsent';
 
-import Home from "@/pages/home";
-import Login from "@/pages/login";
-import Register from "@/pages/register";
-import Favorites from "@/pages/favorites";
-import Hotels from "@/pages/hotels";
-import HotelDetail from "@/pages/hotel-detail";
-import RoomDetail from "@/pages/room-detail";
-import ComparePage from "@/pages/compare";
-import Profile from "@/pages/profile";
-import BookingDetail from "@/pages/booking";
-import Admin from "@/pages/admin";
-import About from "@/pages/about";
-import Press from "@/pages/press";
-import Blog from "@/pages/blog";
-import Careers from "@/pages/careers";
-import HelpCenter from "@/pages/help-center";
-import Contact from "@/pages/contact";
-import CancellationPolicy from "@/pages/cancellation-policy";
-import Safety from "@/pages/safety";
-import PrivacyPolicy from "@/pages/privacy-policy";
-import TermsOfService from "@/pages/terms-of-service";
-import CookiePolicy from "@/pages/cookie-policy";
-import AccessibilityPage from "@/pages/accessibility";
-import { ScrollToTop } from "@/components/ScrollToTop";
+import Home from '@/pages/home';
+import Login from '@/pages/login';
+import Register from '@/pages/register';
+import Favorites from '@/pages/favorites';
+import Hotels from '@/pages/hotels';
+import HotelDetail from '@/pages/hotel-detail';
+import RoomDetail from '@/pages/room-detail';
+import Profile from '@/pages/profile';
+import BookingDetail from '@/pages/booking';
+import Admin from '@/pages/admin';
+import About from '@/pages/about';
+import Press from '@/pages/press';
+import Blog from '@/pages/blog';
+import Careers from '@/pages/careers';
+import HelpCenter from '@/pages/help-center';
+import Contact from '@/pages/contact';
+import CancellationPolicy from '@/pages/cancellation-policy';
+import Safety from '@/pages/safety';
+import PrivacyPolicy from '@/pages/privacy-policy';
+import TermsOfService from '@/pages/terms-of-service';
+import CookiePolicy from '@/pages/cookie-policy';
+import AccessibilityPage from '@/pages/accessibility';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -63,22 +62,21 @@ function Router() {
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />
       <Route path="/hotels" component={Hotels} />
-      <Route path="/compare" component={ComparePage} />
       <Route path="/hotels/:hotelId/rooms/:roomId" component={RoomDetail} />
       <Route path="/hotels/:id" component={HotelDetail} />
-      
+
       <Route path="/favorites">
         <ProtectedRoute>
           <Favorites />
         </ProtectedRoute>
       </Route>
-      
+
       <Route path="/profile">
         <ProtectedRoute>
           <Profile />
         </ProtectedRoute>
       </Route>
-      
+
       <Route path="/booking/:id">
         <ProtectedRoute>
           <BookingDetail />
@@ -103,7 +101,7 @@ function App() {
         <ThemeProvider>
           <CurrencyProvider>
             <AuthProvider>
-              <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+              <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
                 <ScrollToTop />
                 <Router />
               </WouterRouter>
