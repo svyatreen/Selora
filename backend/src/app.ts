@@ -1,15 +1,15 @@
-import express, { type Express } from "express";
-import cors from "cors";
-import pinoHttp from "pino-http";
-import router from "./routes";
-import { logger } from "./lib/logger";
+import express, { type Express } from 'express';
+import cors from 'cors';
+import pinoHttp from 'pino-http';
+import router from './routes';
+import { logger } from './lib/logger';
 
 const app: Express = express();
 
 const allowedOrigins = [
-  "http://localhost:5173",
-  "http://localhost:8080",
-  "https://selora-booking.vercel.app",
+  'http://localhost:5173',
+  'http://localhost:8080',
+  'https://selora-booking.vercel.app',
 ];
 
 app.use(
@@ -20,7 +20,7 @@ app.use(
         return {
           id: req.id,
           method: req.method,
-          url: req.url?.split("?")[0],
+          url: req.url?.split('?')[0],
         };
       },
       res(res) {
@@ -29,7 +29,7 @@ app.use(
         };
       },
     },
-  })
+  }),
 );
 
 const corsOptions: cors.CorsOptions = {
@@ -40,30 +40,31 @@ const corsOptions: cors.CorsOptions = {
       return callback(null, true);
     }
 
-    return callback(null, false);
+    return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "x-selora-lang"],
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-selora-lang'],
 };
 
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api", router);
+app.use('/api', router);
 
-app.get("/healthz", (_req, res) => {
-  res.status(200).send("ok");
+app.get('/healthz', (_req, res) => {
+  res.status(200).send('ok');
 });
 
-app.get("/", (_req, res) => {
-  res.json({ status: "ok" });
+app.get('/', (_req, res) => {
+  res.json({ status: 'ok' });
 });
 
 app.use((req, res) => {
-  res.status(404).json({ error: "Not found" });
+  res.status(404).json({ error: 'Not found' });
 });
 
 export default app;
